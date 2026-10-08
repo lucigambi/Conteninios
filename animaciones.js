@@ -66,15 +66,10 @@
         gsap.to('.hero-world',{y:-65,opacity:.2,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
         gsap.from('.hero-copy > *',{y:32,opacity:0,stagger:.13,duration:1,ease:'power2.out',clearProps:'transform,opacity'});
         gsap.from('.hero-character',{y:100,opacity:0,scale:.82,stagger:.16,duration:1.5,ease:'power3.out'});
-        document.querySelectorAll('[data-count]').forEach(el=>{
-          const target=Number(el.dataset.count),obj={n:0};
-          gsap.to(obj,{n:target,duration:1.5,ease:'power2.out',scrollTrigger:{trigger:'.stats',start:'top 88%',once:true},onUpdate:()=>el.textContent=Math.round(obj.n)});
-        });
-        gsap.from('.coverage-bar i',{scaleX:0,transformOrigin:'left',duration:1.2,scrollTrigger:{trigger:'.head-start',start:'top 90%',once:true}});
-        gsap.from('.why-grid article',{y:35,opacity:0,stagger:.12,duration:.7,scrollTrigger:{trigger:'.why-grid',start:'top 90%',once:true}});
+
       });
       ScrollTrigger.refresh();
-    }else document.querySelectorAll('[data-count]').forEach(el=>el.textContent=el.dataset.count);
+    }
     collectStops();
     updateChapter();syncMedia();
   }

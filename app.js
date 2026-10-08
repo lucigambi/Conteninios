@@ -1,19 +1,19 @@
 'use strict';
-// Único lugar para definir el destino comercial. Vacío = aviso visible, sin enlace ficticio.
+// Único lugar para definir el acceso a la sección de Conteniños en FlexFlix. Vacío = aviso visible, sin enlace ficticio.
 const CTA_URL = '';
 const PERSONAJES = [
-  {id:'charlie',name:'Charlie',quote:'Pregunta, observa y descubre.',description:'Lengua, Matemática y Ciencias Naturales mediante curiosidad, imaginación, libros y música.',short:'Lengua · Matemática · Ciencias',loop:'Charlie leyendo con auriculares entre pilas de libros.',loopTitle:'Cada libro abre una aventura.',scenes:[
-    {code:'C13',title:'La semilla',text:'La pregunta nace frente a la maceta. El libro acompaña el seguimiento del crecimiento con dibujos de distintos días.',explore:'Observar cambios en una planta a lo largo del tiempo y explorar los cuidados que acompañan su crecimiento.'},
-    {code:'C09',title:'Figuras geométricas',text:'Charlie combina piezas y prueba posiciones. La construcción vuelve visible un problema matemático cercano.',explore:'Reconocer formas geométricas sencillas y explorar cómo combinarlas para componer figuras.'}]},
-  {id:'ed',name:'ED',quote:'Conoce el pasado porque estuvo allí.',description:'El pasado y el paso del tiempo, con recuerdos, cambios cotidianos y amistad.',short:'Historia · Memoria · Amistad',loop:'ED enamorado, con corazones, de noche.',loopTitle:'Hay recuerdos que se comparten.',scenes:[
-    {code:'E01',title:'Historia de los juguetes',text:'Recreación ficcional de época: una plaza inspirada en el siglo XIX. ED comparte el trompo con sus amigos; el juego conecta pasado y presente.',explore:'Comparar un juego de antes con su práctica actual y reconocer que jugar juntos puede unir a distintas generaciones.'},
-    {code:'E07',title:'Las cartas',text:'Una carta abre un recuerdo: el mensaje se escribe, se transporta y llega a otra persona. ED comparte una experiencia que vivió.',explore:'Comparar maneras de comunicarse a distancia en diferentes épocas y reconocer qué tienen en común.'}]},
-  {id:'vamp',name:'Vamp',quote:'Explora lugares y formas de vivir.',description:'Lugares, paisajes, culturas y formas de vivir, integrando inclusión y respeto.',short:'Mundo · Culturas · Geografía',loop:'Vamp con anteojos de sol tocando la guitarra eléctrica.',loopTitle:'El mundo tiene muchos ritmos.',scenes:[
-    {code:'V15',title:'Carnavales',text:'Vamp explora máscaras, vestuarios y música en un carnaval de barrio. La celebración permite conocer una forma de vida en comunidad.',explore:'Descubrir maneras de celebrar el carnaval mediante músicas, máscaras, vestuarios y encuentros comunitarios.'},
-    {code:'V03',title:'Montañas, llanuras y costas',text:'Las montañas cambian el entorno del viaje. Vamp mira el relieve y encuentra nuevas personas y recorridos.',explore:'Observar y comparar rasgos visibles de diferentes paisajes, incorporando palabras para describirlos.'}]},
-  {id:'alma',name:'Alma',quote:'Reconoce lo que siente y pide lo que necesita.',description:'Emociones, expresión de necesidades, cuidado y vínculos, con acompañamiento de los miedos cotidianos.',short:'Emociones · Cuidado · Vínculos',loop:'Alma flotando, come una galletita y toma leche.',loopTitle:'Sentir también es descubrir.',scenes:[
-    {code:'A01',title:'Las emociones',text:'Frente al espejo y con tarjetas de emociones, Alma reconoce y nombra alegría, tristeza y enojo.',explore:'Reconocer y nombrar alegría, tristeza y enojo a partir de gestos y situaciones cotidianas.'},
-    {code:'A16',title:'Puedo reparar un error',text:'Alma vuelca leche por accidente. Reconoce lo ocurrido y participa en una reparación concreta: limpiar la mesa con un paño.',explore:'Reconocer el efecto de una acción y proponer una reparación relacionada con lo ocurrido.'}]}
+  {id:'charlie',name:'Charlie',quote:'Cada pregunta abre una aventura.',description:'Charlie siempre tiene un libro cerca y una pregunta por hacer. Con él vas a inventar historias, jugar con números y descubrir los secretos de la naturaleza.',short:'Lengua · Matemática · Ciencias',loop:'Charlie leyendo con auriculares entre pilas de libros.',loopTitle:'Cada libro abre una aventura.',scenes:[
+    {code:'C13',title:'La semilla',text:'¡Algo asoma en la maceta! Acompañá a Charlie a cuidar un brote y a dibujar cómo cambia día a día.',explore:'Descubrí qué necesita una planta para crecer. Un poquito de paciencia y mucha curiosidad.'},
+    {code:'C09',title:'Figuras geométricas',text:'¿Podemos construir una casa con estas piezas? Probá con Charlie, cambiá los bloques de lugar y mirá qué aparece.',explore:'Jugá con círculos, cuadrados y triángulos para crear tus propias construcciones.'}]},
+  {id:'ed',name:'ED',quote:'Conoce el pasado porque estuvo allí.',description:'ED es un zombie con muchísimas historias para contar. Viajá con él a otros tiempos, descubrí inventos y probá juegos que siguen uniendo amigos.',short:'Historia · Memoria · Amistad',loop:'ED enamorado, con corazones, de noche.',loopTitle:'Hay recuerdos que se comparten.',scenes:[
+    {code:'E01',title:'Historia de los juguetes',text:'Viajá con ED a una plaza de otros tiempos. Un trompo empieza a girar y enseguida aparecen nuevos compañeros de juego.',explore:'Descubrí juegos de antes que todavía podemos compartir. ¿A quién invitarías a jugar?'},
+    {code:'E07',title:'Las cartas',text:'ED tiene una carta para enviar. Seguí su recorrido por un correo antiguo y descubrí cómo llega un mensaje a alguien que está lejos.',explore:'Imaginá tu propio mensaje y conocé distintas maneras de hacerlo viajar.'}]},
+  {id:'vamp',name:'Vamp',quote:'El mundo está lleno de sorpresas.',description:'Vamp es un murciélago listo para salir a explorar. Volá con él entre paisajes, músicas y celebraciones, y descubrí distintas formas de vivir y compartir.',short:'Mundo · Culturas · Geografía',loop:'Vamp con anteojos de sol tocando la guitarra eléctrica.',loopTitle:'El mundo tiene muchos ritmos.',scenes:[
+    {code:'V15',title:'Carnavales',text:'¡Suena la música y el barrio se llena de colores! Seguí a Vamp entre máscaras, disfraces y bailes de carnaval.',explore:'Explorá ritmos, colores y distintas formas de celebrar juntos.'},
+    {code:'V03',title:'Montañas, llanuras y costas',text:'Vamp llegó a un valle rodeado de montañas. Una nueva amiga lo espera para mirar el paisaje y seguir explorando.',explore:'Descubrí qué hace distinto a cada paisaje y encontrá palabras para contar lo que ves.'}]},
+  {id:'alma',name:'Alma',quote:'Lo que sentís también cuenta.',description:'Alma es una pequeña fantasma que te acompaña a descubrir tus emociones. Con ella vas a poner en palabras lo que sentís, pedir ayuda y aprender a cuidar a tus amigos.',short:'Emociones · Cuidado · Vínculos',loop:'Alma flotando, come una galletita y toma leche.',loopTitle:'Sentir también es descubrir.',scenes:[
+    {code:'A01',title:'Las emociones',text:'Una sonrisa, un ceño fruncido, una carita triste. Jugá con Alma frente al espejo y descubrí qué nos cuentan nuestros gestos.',explore:'Poneles nombre a la alegría, la tristeza y el enojo. ¿Cómo te sentís hoy?'},
+    {code:'A16',title:'Puedo reparar un error',text:'¡Uy, se volcó la leche! Alma busca un paño y se pone a limpiar. A veces nos equivocamos, y podemos hacer algo para ayudar.',explore:'Pensá con Alma cómo reparar un pequeño accidente y cuidar lo que compartimos.'}]}
 ];
 const escapeHTML = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function picture(path,alt,sizes='(max-width: 900px) 85vw, 30vw') {
@@ -54,11 +54,11 @@ function buildCharacters() {
       alma:[['Emociones','Reconocer y poner en palabras lo que sentimos.'],['Cuidado','Pedir ayuda, poner límites y encontrar calma.'],['Amistad','Compartir, escuchar y aprender a reparar.']]
     };
     return `<section class="character ${p.id} chapter" id="${p.id}" data-label="${p.name}" data-frame="0"><div class="character-inner">
-      <div class="section-top"><p class="eyebrow">0${i+2} / EL MUNDO DE ${p.name.toUpperCase()}</p><span class="section-note">UNA MIRADA PROPIA PARA APRENDER</span></div>
+      <div class="section-top"><p class="eyebrow">0${i+1} / EL MUNDO DE ${p.name.toUpperCase()}</p><span class="section-note">APRENDÉ JUGANDO CON ${p.name.toUpperCase()}</span></div>
       <div class="character-heading"><h2>${p.name}<span aria-hidden="true">.</span></h2><p>${p.quote}</p></div>
       <div class="character-stage">
         <div class="turntable"><img class="turn-image" src="assets/img/giros/${p.id}/${p.id}-00.webp" alt="Giro de ocho vistas de ${p.name}" width="420" height="610" loading="lazy" draggable="false"><div class="turn-controls"><button data-turn="-1" aria-label="Vista anterior de ${p.name}">‹</button><span class="frame-number">01 / 08</span><button data-turn="1" aria-label="Vista siguiente de ${p.name}">›</button></div><span class="turn-hint">${mobileQuery.matches?'DESLIZÁ SOBRE EL PERSONAJE':'GIRÁ CON EL SCROLL O LAS FLECHAS'}</span></div>
-        <div class="character-content"><div class="content-types">${summaries[p.id].map(([title,text])=>`<article><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>
+        <div class="character-content"><p class="character-description">${p.description}</p><div class="content-types">${summaries[p.id].map(([title,text])=>`<article><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>
           <div class="scene-grid">${p.scenes.map((scene,n)=>`<button class="scene-card" data-scene="${p.id}:${n}">${picture(`assets/img/escenas/${p.id}-escena-${n+1}`,scene.title)}<h3>${scene.title}</h3><span class="scene-more">Descubrí esta aventura ↗</span></button>`).join('')}</div>
           <details class="character-video"><summary>Conocé a ${p.name} en movimiento <span>+</span></summary>${videoSlot(`${p.id}-loop`,p.loop)}</details>
         </div>
@@ -94,37 +94,16 @@ dialog.querySelector('.dialog-close').addEventListener('click',closeDialog);
 dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
 dialog.addEventListener('close',()=>{dialog.querySelectorAll('video').forEach(v=>v.pause());document.body.style.overflow='';document.querySelector('#dialog-content').innerHTML='';dialogReturnFocus?.focus({preventScroll:true});window.syncMedia?.();});
 document.addEventListener('click',e=>{
-  const topic=e.target.closest('[data-topic]');
-  if(topic){const t=TEMAS.find(t=>t.codigo===topic.dataset.topic);const p=PERSONAJES.find(p=>p.id===t.personaje);openDialog(`<p class="mini-label">${t.codigo} / ${p.name} / ${t.origen==='curricula'?'Currícula FlexFlix':'Propuesta'}</p><h2 id="dialog-title">${t.titulo}</h2><p>${t.descripcion}</p><p class="explore"><strong>${t.area}</strong><br>Una de las 18 ideas del mundo de ${p.name}.</p>`);dialog.setAttribute('aria-labelledby','dialog-title');}
   const scene=e.target.closest('[data-scene]');
-  if(scene){const[id,n]=scene.dataset.scene.split(':');const p=PERSONAJES.find(p=>p.id===id),s=p.scenes[n];openDialog(`${picture(`assets/img/escenas/${id}-escena-${Number(n)+1}`,s.title,'80vw')}<p class="mini-label">${s.code} / ${p.name}</p><h2 id="dialog-title">${s.title}</h2><p>${s.text}</p><p class="explore"><strong>Explora</strong><br>${s.explore}</p>`);dialog.setAttribute('aria-labelledby','dialog-title');}
+  if(scene){const[id,n]=scene.dataset.scene.split(':');const p=PERSONAJES.find(p=>p.id===id),s=p.scenes[n];openDialog(`${picture(`assets/img/escenas/${id}-escena-${Number(n)+1}`,s.title,'80vw')}<p class="mini-label">UNA AVENTURA CON ${p.name.toUpperCase()}</p><h2 id="dialog-title">${s.title}</h2><p>${s.text}</p><p class="explore"><strong>Para descubrir juntos</strong><br>${s.explore}</p>`);dialog.setAttribute('aria-labelledby','dialog-title');}
   if(e.target.closest('[data-intro]')){openDialog(`<h2 id="dialog-title">Una entrada con magia.</h2>${videoSlot('intro-logo','El logo se ensambla con piezas volando (0–3 s del teaser).',{intro:true})}`);dialog.setAttribute('aria-labelledby','dialog-title');}
 });
 document.querySelectorAll('[data-cta]').forEach(a=>{
   if(CTA_URL){a.href=CTA_URL;a.rel='noopener';}
-  else a.addEventListener('click',e=>{e.preventDefault();openDialog('<p class="mini-label">CONTENIÑOS × FLEXFLIX</p><h2 id="dialog-title">El próximo paso empieza acá.</h2><p>El enlace de contacto todavía está por definir.</p><p class="explore">Esta propuesta está lista para conversar sobre el desarrollo de Conteniños con FlexFlix.</p>');dialog.setAttribute('aria-labelledby','dialog-title');});
+  else a.addEventListener('click',e=>{e.preventDefault();openDialog('<p class="mini-label">CONTENIÑOS EN FLEXFLIX</p><h2 id="dialog-title">¡La aventura está por comenzar!</h2><p>Pronto vas a poder entrar al mundo de Conteniños desde acá.</p><p class="explore">Mientras tanto, conocé a Charlie, ED, Vamp y Alma y descubrí sus aventuras.</p>');dialog.setAttribute('aria-labelledby','dialog-title');});
 });
 
-let selectedCharacter='all',selectedOrigin='all',visiblePerCharacter=6;
-const topicGrid=document.querySelector('#topic-grid');
-function renderBank(animate=false){
-  const oldRects=new Map([...topicGrid.children].map(el=>[el.dataset.topic,el.getBoundingClientRect()]));
-  const filtered=TEMAS.filter(t=>(selectedCharacter==='all'||t.personaje===selectedCharacter)&&(selectedOrigin==='all'||t.origen===selectedOrigin));
-  const counts={};
-  const visible=filtered.filter(t=>{counts[t.personaje]=(counts[t.personaje]||0)+1;return counts[t.personaje]<=visiblePerCharacter;});
-  topicGrid.innerHTML=visible.map(t=>`<button class="topic-card" data-topic="${t.codigo}" data-personaje="${t.personaje}"><span class="topic-card-top"><span>${t.codigo}</span><span>${PERSONAJES.find(p=>p.id===t.personaje).name.toUpperCase()}</span></span><h3>${t.titulo}</h3><span class="topic-card-bottom"><span>${t.origen==='curricula'?'● Currícula FlexFlix':'○ Propuesta'}</span><span aria-hidden="true">↗</span></span></button>`).join('');
-  document.querySelector('#filter-count').textContent=`${visible.length} de ${filtered.length} temas${selectedCharacter==='all'?'':` · ${PERSONAJES.find(p=>p.id===selectedCharacter).name}`}`;
-  document.querySelector('#more-topics').hidden=visible.length===filtered.length;
-  if(animate&&!isMotionReduced()&&!motionPaused){
-    [...topicGrid.children].forEach((el,i)=>{const old=oldRects.get(el.dataset.topic),now=el.getBoundingClientRect();el.animate(old?[{transform:`translate(${old.left-now.left}px,${old.top-now.top}px)`,opacity:.6},{transform:'translate(0,0)',opacity:1}]:[{transform:'translateY(16px)',opacity:0},{transform:'translateY(0)',opacity:1}],{duration:350,delay:Math.min(i*9,120),easing:'cubic-bezier(.2,.7,.3,1)'});});
-  }
-  window.refreshPresentation?.();
-}
-document.querySelectorAll('[data-character]').forEach(b=>b.addEventListener('click',()=>{selectedCharacter=b.dataset.character;visiblePerCharacter=6;document.querySelectorAll('[data-character]').forEach(x=>{const on=x===b;x.classList.toggle('active',on);x.setAttribute('aria-pressed',on);});renderBank(true);}));
-document.querySelector('#origin-filter').addEventListener('change',e=>{selectedOrigin=e.target.value;visiblePerCharacter=6;renderBank(true);});
-document.querySelector('#more-topics').addEventListener('click',()=>{visiblePerCharacter+=6;renderBank(true);});
-mobileQuery.addEventListener('change',()=>{document.querySelectorAll('.turn-hint').forEach(el=>el.textContent=mobileQuery.matches?'DESLIZÁ SOBRE EL PERSONAJE':'GIRÁ CON EL SCROLL O LAS FLECHAS');renderBank();});
-renderBank();
+mobileQuery.addEventListener('change',()=>{document.querySelectorAll('.turn-hint').forEach(el=>el.textContent=mobileQuery.matches?'DESLIZÁ SOBRE EL PERSONAJE':'GIRÁ CON EL SCROLL O LAS FLECHAS');});
 
 const videoObservers=[];
 function initVideos(scope=document){

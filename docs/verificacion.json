@@ -17,34 +17,10 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
           "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 2
         },
         {
           "horizontalOverflow": false,
@@ -57,22 +33,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "vamp",
           "clipped": [],
           "id": "vamp",
@@ -81,49 +41,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "alma",
           "clipped": [],
           "id": "alma",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
           "stage": 0
         },
         {
@@ -132,14 +52,6 @@
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -170,34 +82,10 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
           "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 2
         },
         {
           "horizontalOverflow": false,
@@ -210,22 +98,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "vamp",
           "clipped": [],
           "id": "vamp",
@@ -234,49 +106,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "alma",
           "clipped": [],
           "id": "alma",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
           "stage": 0
         },
         {
@@ -285,14 +117,6 @@
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -323,34 +147,10 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
           "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 2
         },
         {
           "horizontalOverflow": false,
@@ -363,22 +163,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "vamp",
           "clipped": [],
           "id": "vamp",
@@ -387,49 +171,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "alma",
           "clipped": [],
           "id": "alma",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
           "stage": 0
         },
         {
@@ -438,14 +182,6 @@
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -476,34 +212,10 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
           "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 2
         },
         {
           "horizontalOverflow": false,
@@ -516,22 +228,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "vamp",
           "clipped": [],
           "id": "vamp",
@@ -540,49 +236,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "alma",
           "clipped": [],
           "id": "alma",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
           "stage": 0
         },
         {
@@ -591,14 +247,6 @@
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -629,34 +277,10 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
           "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 2
         },
         {
           "horizontalOverflow": false,
@@ -669,22 +293,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "vamp",
           "clipped": [],
           "id": "vamp",
@@ -693,49 +301,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "alma",
           "clipped": [],
           "id": "alma",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
           "stage": 0
         },
         {
@@ -744,14 +312,6 @@
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -782,14 +342,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
@@ -822,25 +374,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -871,34 +407,10 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "numeros",
-          "clipped": [],
-          "id": "numeros",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "charlie",
           "clipped": [],
           "id": "charlie",
           "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "charlie",
-          "clipped": [],
-          "id": "charlie",
-          "stage": 2
         },
         {
           "horizontalOverflow": false,
@@ -911,22 +423,6 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "ed",
-          "clipped": [],
-          "id": "ed",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "vamp",
           "clipped": [],
           "id": "vamp",
@@ -935,49 +431,9 @@
         {
           "horizontalOverflow": false,
           "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "vamp",
-          "clipped": [],
-          "id": "vamp",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
           "section": "alma",
           "clipped": [],
           "id": "alma",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 1
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "alma",
-          "clipped": [],
-          "id": "alma",
-          "stage": 2
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "temas",
-          "clipped": [],
-          "id": "temas",
           "stage": 0
         },
         {
@@ -986,14 +442,6 @@
           "section": "trailer",
           "clipped": [],
           "id": "trailer",
-          "stage": 0
-        },
-        {
-          "horizontalOverflow": false,
-          "brokenImages": [],
-          "section": "flexflix",
-          "clipped": [],
-          "id": "flexflix",
           "stage": 0
         },
         {
@@ -1011,182 +459,77 @@
   "errors": [],
   "external_requests": [],
   "interactions": {
-    "charlie_curricula": 16,
-    "alma_propuesta": 14,
-    "topic_dialog": true,
-    "escape_close": true,
-    "all_topics": 72,
-    "cta_pending": true,
-    "mobile_initial": 24,
-    "mobile_more": 48,
+    "charlie_turn": true,
+    "ed_turn": true,
+    "vamp_turn": true,
+    "alma_turn": true,
+    "eight_scenes": true,
+    "three_ctas": true,
+    "no_catalog": true,
     "mobile_no_pins": true
+  },
+  "reduced_motion": {
+    "pins": 0,
+    "hiddenPanels": 0,
+    "cssAnimations": 0,
+    "topics": 0
   },
   "keyboard": {
     "forward": [
       {
-        "id": "numeros",
-        "stage": 0,
-        "delta": 0
-      },
-      {
         "id": "charlie",
         "stage": 0,
         "delta": 0
       },
       {
-        "id": "charlie",
-        "stage": 1,
-        "delta": 0
-      },
-      {
-        "id": "charlie",
-        "stage": 2,
-        "delta": 0
-      },
-      {
         "id": "ed",
         "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "ed",
-        "stage": 1,
-        "delta": 0
-      },
-      {
-        "id": "ed",
-        "stage": 2,
-        "delta": 0
+        "delta": 0.02
       },
       {
         "id": "vamp",
         "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "vamp",
-        "stage": 1,
-        "delta": 0
-      },
-      {
-        "id": "vamp",
-        "stage": 2,
-        "delta": 0
+        "delta": 0.03
       },
       {
         "id": "alma",
         "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "alma",
-        "stage": 1,
-        "delta": 0
-      },
-      {
-        "id": "alma",
-        "stage": 2,
-        "delta": 0
-      },
-      {
-        "id": "temas",
-        "stage": 0,
-        "delta": 0
+        "delta": 0.05
       },
       {
         "id": "trailer",
         "stage": 0,
-        "delta": 0.19
-      },
-      {
-        "id": "flexflix",
-        "stage": 0,
-        "delta": 0.19
+        "delta": 0.06
       },
       {
         "id": "cierre",
         "stage": 0,
-        "delta": 0.19
+        "delta": 0.06
       }
     ],
     "backward": [
       {
-        "id": "flexflix",
-        "stage": 0,
-        "delta": 0.19
-      },
-      {
         "id": "trailer",
         "stage": 0,
-        "delta": 0.19
-      },
-      {
-        "id": "temas",
-        "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "alma",
-        "stage": 2,
-        "delta": 0
-      },
-      {
-        "id": "alma",
-        "stage": 1,
-        "delta": 0
+        "delta": 0.06
       },
       {
         "id": "alma",
         "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "vamp",
-        "stage": 2,
-        "delta": 0
-      },
-      {
-        "id": "vamp",
-        "stage": 1,
-        "delta": 0
+        "delta": 0.05
       },
       {
         "id": "vamp",
         "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "ed",
-        "stage": 2,
-        "delta": 0
-      },
-      {
-        "id": "ed",
-        "stage": 1,
-        "delta": 0
+        "delta": 0.03
       },
       {
         "id": "ed",
         "stage": 0,
-        "delta": 0
+        "delta": 0.02
       },
       {
         "id": "charlie",
-        "stage": 2,
-        "delta": 0
-      },
-      {
-        "id": "charlie",
-        "stage": 1,
-        "delta": 0
-      },
-      {
-        "id": "charlie",
-        "stage": 0,
-        "delta": 0
-      },
-      {
-        "id": "numeros",
         "stage": 0,
         "delta": 0
       },
@@ -1196,23 +539,5 @@
         "delta": 0
       }
     ]
-  },
-  "reduced_motion": {
-    "pins": 0,
-    "hiddenPanels": 0,
-    "cssAnimations": 0,
-    "topics": 72
-  },
-  "motion_toggle": {
-    "paused": {
-      "pins": 0,
-      "current": 4,
-      "top": -0.5
-    },
-    "resumed": {
-      "pins": 4,
-      "current": 4,
-      "top": 0
-    }
   }
 }

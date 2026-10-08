@@ -10,7 +10,7 @@ Flechas arriba/abajo, PageUp/PageDown y espacio mantienen el desplazamiento nati
 Flechas izquierda/derecha o botones inferiores: personaje/sección anterior o siguiente.
 Home/End: comienzo/cierre.
 Cada personaje presenta tres tipos de contenido y dos escenas; sus detalles se abren al elegirlas.
-Los videos de personaje y el catálogo completo se despliegan a pedido.
+Los videos de personaje se despliegan a pedido.
 El giro acompaña el scroll sin detenerlo; también funciona con botones y swipe.
 El botón de pausa desactiva las animaciones.
 La cabecera indica Movimiento activo, pausado o reducido. Se respeta la preferencia
@@ -22,15 +22,14 @@ El hero tiene flotación continua perceptible también en móvil. En desktop se 
 En móvil: escenas con scroll-snap y giro por swipe o botones.
 
 CONTENIDO
-data/temas.js: única fuente de los 72 temas, títulos, áreas, origen y descripciones.
+data/temas.js: archivo de referencia conservado; la landing no carga ni muestra el catálogo curricular.
 app.js: fichas de personajes, bajadas de escenas y CTA_URL (al comienzo).
-index.html: textos generales y bloque Por qué FlexFlix.
+index.html: bienvenida, personajes, video y cierre. La landing presenta el producto y prioriza el acceso a su sección en FlexFlix; no es una propuesta comercial.
 styles.css: tres niveles de tokens y reglas responsive.
 animaciones.js: ScrollTrigger sin fijación, teclado y movimiento reducido.
 
 PENDIENTES REALES
-- URL comercial: CTA_URL está vacía. El botón explica que el enlace está pendiente.
-- Textos finales de Por qué FlexFlix: se muestran bases tomadas del brief y aviso visible.
+- URL de la sección Conteniños en FlexFlix: CTA_URL está vacía. Los tres accesos muestran un aviso de próxima disponibilidad hasta configurarla.
 - Tipografía de marca: Fredoka/Nunito locales como elección provisional.
 - Videos y pósters: todos los espacios usan placeholders con ficha visible.
 - Guía educativa: el PDF recibido (CONTENIÑOS versión By FlexFlix) tiene 10 páginas de
@@ -76,7 +75,7 @@ VERIFICAR (OPCIONAL, SOLO DESARROLLO)
 Python con Playwright y Google Chrome instalado:
 python verificar-sitio.py --teclado
 Revisa en modo offline y con file:// las cinco resoluciones desktop y 390x844,
-filtros, diálogos, CTA pendiente, movimiento reducido y recorrido por teclado.
+giros, las ocho escenas, los tres accesos pendientes, movimiento reducido y recorrido por teclado.
 Resultados: docs/verificacion.json. Capturas: docs/revision-*.png y .jpg.
 También se verificó 1366x650 para simular el alto útil de una notebook.
 docs/verificacion-media.json registra play, pausa, audio y búsqueda, probados con el

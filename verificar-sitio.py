@@ -13,7 +13,7 @@ parser=argparse.ArgumentParser();parser.add_argument('--teclado',action='store_t
 report={'resolutions':[],'errors':[],'external_requests':[],'interactions':{}}
 if not args.teclado and (ROOT/'docs/verificacion.json').exists():
     previous=json.loads((ROOT/'docs/verificacion.json').read_text(encoding='utf-8'))
-    if 'keyboard' in previous: report['keyboard']=previous['keyboard']
+    # El recorrido anterior no valida la nueva estructura.
     if args.compacto:
         report=previous
         report['resolutions']=[r for r in report['resolutions'] if r['viewport']!=[1366,650]]
@@ -43,7 +43,7 @@ with sync_playwright() as p:
             result.update(id=stop['id'],stage=stop['stage']);checks.append(result)
             shot=page.screenshot();im=Image.open(BytesIO(shot)).convert('RGB');im.thumbnail((400,300) if w>900 else (195,422))
             captures.append((stop,im.copy()))
-            if w==1366 and h==768 and (stop['id'] in ['inicio','charlie','alma','trailer','flexflix','cierre']):
+            if w==1366 and h==768 and (stop['id'] in ['inicio','charlie','alma','trailer','cierre']):
                 (ROOT/f'docs/revision-{stop["id"]}-{stop["stage"]}.png').write_bytes(shot)
         tw,th=(400,320) if w>900 else (195,450)
         sheet=Image.new('RGB',(tw*4,th*((len(captures)+3)//4)),'#d0d0d0');draw=ImageDraw.Draw(sheet)
@@ -53,21 +53,27 @@ with sync_playwright() as p:
         report['resolutions'].append({'viewport':[w,h],'checks':checks,'errors':errors})
         print(f'{w}x{h}: {len(stops)} estados revisados, {len(errors)} errores JS',flush=True)
         if w==1366:
-            page.locator('.bank-library > summary').click()
-            # Combinaciones de filtros, detalle y CTA pendiente.
-            page.locator('[data-character="charlie"]').click();page.locator('#origin-filter').select_option('curricula')
-            report['interactions']['charlie_curricula']=page.locator('#topic-grid .topic-card').count()
-            page.locator('[data-character="alma"]').click();page.locator('#origin-filter').select_option('propuesta')
-            report['interactions']['alma_propuesta']=page.locator('#topic-grid .topic-card').count()
-            page.locator('#topic-grid .topic-card').first.click();report['interactions']['topic_dialog']=page.locator('dialog').evaluate('(e)=>e.open')
-            page.keyboard.press('Escape');report['interactions']['escape_close']=not page.locator('dialog').evaluate('(e)=>e.open')
-            page.locator('[data-character="all"]').click();page.locator('#origin-filter').select_option('all')
-            report['interactions']['all_topics']=page.locator('#topic-grid .topic-card').count()
-            page.locator('[data-cta]').click();report['interactions']['cta_pending']=page.locator('dialog').inner_text().find('todavía está por definir')>=0;page.keyboard.press('Escape')
+            for character in ['charlie','ed','vamp','alma']:
+                section=page.locator('#'+character)
+                section.locator('[data-turn="1"]').scroll_into_view_if_needed()
+                page.wait_for_timeout(400)
+                before=section.get_attribute('data-frame')
+                section.locator('[data-turn="1"]').click()
+                page.wait_for_timeout(200)
+                after=section.get_attribute('data-frame')
+                report['interactions'][character+'_turn']=int(after)==(int(before)+1)%8
+            for scene in page.locator('[data-scene]').all():
+                scene.click()
+                assert page.locator('dialog').evaluate('(e)=>e.open')
+                page.keyboard.press('Escape')
+            report['interactions']['eight_scenes']=page.locator('[data-scene]').count()==8
+            for cta in page.locator('[data-cta]').all():
+                cta.click()
+                assert 'Pronto vas a poder entrar' in page.locator('dialog').inner_text()
+                page.keyboard.press('Escape')
+            report['interactions']['three_ctas']=page.locator('[data-cta]').count()==3
+            report['interactions']['no_catalog']=page.locator('#temas,#numeros,#flexflix,.timeline').count()==0
         if w==390:
-            page.locator('.bank-library > summary').click()
-            page.locator('#more-topics').scroll_into_view_if_needed();report['interactions']['mobile_initial']=page.locator('#topic-grid .topic-card').count()
-            page.locator('#more-topics').click();report['interactions']['mobile_more']=page.locator('#topic-grid .topic-card').count()
             report['interactions']['mobile_no_pins']=page.locator('.pinned-character').count()==0
             page.evaluate('window.scrollTo(0,0)');page.wait_for_timeout(200);page.screenshot(path=str(ROOT/'docs/revision-mobile.png'))
         context.close()
