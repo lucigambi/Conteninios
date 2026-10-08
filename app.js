@@ -47,17 +47,23 @@ function setFrame(section,n) {
   const counter=section.querySelector('.frame-number');
   if(counter)counter.textContent=`${String(index+1).padStart(2,'0')} / 08`;
 }
-// Fondo e iconos provisionales; las escenas son propias de cada personaje.
+// Fondos, escenas e iconos propios de cada personaje.
 // Los giros conservan las ocho vistas originales de cada personaje.
-const CHARACTER_SCENE_ORDER = {charlie:[1,2,1],ed:[1,2,1],vamp:[2,2,1],alma:[1,2,3]};
+const CHARACTER_SCENE_ORDER = {charlie:['lengua',2,1],ed:[1,2,'musica'],vamp:[2,'viajes',1],alma:[1,2,3]};
+const CHARACTER_ICONS = {
+  charlie:['charly-lengua','charly-matematica','charly-ciencias'],
+  ed:['ed-tiempo','ed-inventos','ed-recuerdos'],
+  vamp:['vamp-paisajes','vamp-viajes','vamp-culturas'],
+  alma:['alma-emociones','alma-cuidado','alma-amistad']
+};
 const CHARACTER_VISUALS = Object.fromEntries(PERSONAJES.map(p=>[p.id, {
-  background:'assets/img/fondos/alma-fondo.webp',
-  icons:['assets/img/iconos/alma-emociones.png','assets/img/iconos/alma-cuidado.png','assets/img/iconos/alma-amistad.png'],
+  background:`assets/img/fondos/${p.id}-fondo.webp`,
+  icons:CHARACTER_ICONS[p.id].map(name=>`assets/img/iconos/${name}.png`),
   scenes:CHARACTER_SCENE_ORDER[p.id].map(n=>`assets/img/escenas/${p.id}-escena-${n}`)
 }]));
 const CHARACTER_FEATURES = {
-  charlie:{speech:'¿Qué descubrimos hoy?',items:[['Lengua','Cuentos, rimas y juegos con palabras.','Inventamos otro final'],['Matemática','Números y formas para jugar y construir.','Figuras geométricas'],['Ciencias','Plantas, animales y pequeños descubrimientos.','La semilla']]},
-  ed:{speech:'¿Viajamos en el tiempo?',items:[['Otros tiempos','Juguetes, escuelas y costumbres de antes.','Historia de los juguetes'],['Inventos','Cartas, trenes y objetos con historia.','Las cartas'],['Recuerdos','Música, culturas y amistades que crecen.','Un objeto, un recuerdo']]},
+  charlie:{speech:'¿Qué descubrimos hoy?',items:[['Lengua','Cuentos, rimas y juegos con palabras.','Jugamos con las palabras'],['Matemática','Números y formas para jugar y construir.','Figuras geométricas'],['Ciencias','Plantas, animales y pequeños descubrimientos.','La semilla']]},
+  ed:{speech:'¿Viajamos en el tiempo?',items:[['Otros tiempos','Juguetes, escuelas y costumbres de antes.','Historia de los juguetes'],['Inventos','Cartas, trenes y objetos con historia.','Las cartas'],['Recuerdos','Música, culturas y amistades que crecen.','Música para compartir']]},
   vamp:{speech:'¿Adónde vamos hoy?',items:[['Paisajes','Selvas, montañas y mundos bajo el agua.','Montañas, llanuras y costas'],['Viajes','Mapas, transportes y formas de vivir.','Un mapa para explorar'],['Culturas','Fiestas, juegos y un lugar para todos.','Carnavales']]},
   alma:{speech:'¿Cómo te sentís hoy?',items:[['Emociones','Reconocer y poner en palabras lo que sentimos.','Las emociones'],['Cuidado','Pedir ayuda, poner límites y encontrar calma.','Puedo reparar un error'],['Amistad','Compartir, escuchar y aprender a reparar.','Jugar es mejor juntos']]}
 };
@@ -65,7 +71,7 @@ function buildCharacters() {
   document.querySelector('#personajes').innerHTML=PERSONAJES.map(p=>{
     const media=CHARACTER_VISUALS[p.id],feature=CHARACTER_FEATURES[p.id];
     const turnArrow=direction=>`<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="${direction<0?'M25 16H7m8-8-8 8 8 8':'M7 16h18m-8-8 8 8-8 8'}"/></svg>`;
-    const features=feature.items.map(([title,text,sceneTitle],n)=>`<article><div class="feature-heading"><img class="feature-icon" src="${media.icons[n]}" alt="" width="269" height="240" loading="lazy"><div class="feature-copy"><h3>${title}</h3><p>${text}</p></div></div><div class="scene-card">${picture(media.scenes[n],`${p.name}: ${p.scenes[CHARACTER_SCENE_ORDER[p.id][n]-1].title}`,'(max-width: 900px) 85vw, 22vw')}<h3>${sceneTitle}</h3></div></article>`).join('');
+    const features=feature.items.map(([title,text,sceneTitle],n)=>`<article><div class="feature-heading"><img class="feature-icon" src="${media.icons[n]}" alt="" width="269" height="240" loading="lazy"><div class="feature-copy"><h3>${title}</h3><p>${text}</p></div></div><div class="scene-card">${picture(media.scenes[n],`${p.name}: ${sceneTitle}`,'(max-width: 900px) 85vw, 22vw')}<h3>${sceneTitle}</h3></div></article>`).join('');
     return `<section class="character character-design ${p.id} chapter" id="${p.id}" data-label="${p.name}" data-frame="0" style="--character-background:url('${media.background}')"><div class="character-inner">
       <div class="character-stage">
         <div class="turntable"><div class="character-orbits" aria-hidden="true"><span class="character-orbit"></span><span class="character-orbit character-orbit-second"></span></div><img class="turn-image" src="assets/img/giros/${p.id}/${p.id}-00.webp" alt="Giro de ocho vistas de ${p.name}" width="420" height="610" loading="lazy" draggable="false"><div class="turn-controls"><button data-turn="-1" aria-label="Vista anterior de ${p.name}">${turnArrow(-1)}</button><button data-turn="1" aria-label="Vista siguiente de ${p.name}">${turnArrow(1)}</button></div><p class="character-speech">${feature.speech}</p></div>

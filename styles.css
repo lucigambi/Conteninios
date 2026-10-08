@@ -113,7 +113,7 @@ body.closing-inactive .closing-group img{animation-play-state:paused}
 @media(max-width:900px){.header-actions .header-cta{display:flex;font-size:12px;gap:8px;padding:10px}.header-actions .motion-status{display:none}.trailer-main{min-height:0}.character .character-description{font-size:17px}.hero-signature>span{font-size:10px}}
 
 /* Alma: fondo de habitación y tres columnas ilustradas. */
-.character.character-design{--accent:#00798d;--character-panel:rgba(204,223,217,.48);background:var(--wash) var(--character-background) left center/cover no-repeat}
+.character.character-design{--accent:#00798d;--character-panel:#fff9ed;--character-text:#626262;color:var(--character-text);background:var(--wash) var(--character-background) left center/cover no-repeat}
 .character.character-design .character-inner{padding:96px 2.3vw 40px;min-height:100svh;display:flex;align-items:center}
 .character-design .section-top{display:none}
 .character.character-design .character-stage{width:100%;grid-template-columns:31% minmax(0,1fr);gap:3.2%;align-items:center}
@@ -147,9 +147,9 @@ body.closing-inactive .closing-group img{animation-play-state:paused}
 .character-design .turntable{min-height:0;margin-bottom:0}
 .character-design .turntable:before{top:20%;left:9%;width:82%;height:60%}
 .character-design .turntable:after{display:block;bottom:5px;left:33%;width:34%;height:15px;opacity:1;background:radial-gradient(ellipse,rgba(25,43,44,.17),rgba(25,43,44,.06) 42%,transparent 72%);pointer-events:none}
-.character-speech{position:absolute;z-index:4;top:0;right:0;transform:translateY(-65%);width:155px;max-width:46%;padding:13px 16px;border-radius:24px 24px 24px 12px;background:#fff9ed;color:var(--accent);font-family:Fredoka,sans-serif;font-size:clamp(18px,1.4vw,22px);line-height:1.25;text-align:center;box-shadow:0 3px 12px #192b2c0a}
+.character-speech{position:absolute;z-index:4;top:15%;right:15%;translate:0 -45%;width:155px;max-width:46%;padding:13px 16px;border-radius:24px 24px 24px 12px;background:var(--character-panel);color:var(--accent);font-family:Fredoka,sans-serif;font-size:clamp(18px,1.4vw,22px);line-height:1.25;text-align:center;box-shadow:0 3px 12px #192b2c0a}
 .character-speech:before{content:'';position:absolute;bottom:-15px;left:14px;width:24px;height:22px;background:inherit;clip-path:polygon(0 0,100% 0,0 100%);transform:rotate(10deg)}
-@media(max-width:900px){.character-design .turntable{margin-top:48px}.character-speech{right:0;width:145px}}
+@media(max-width:900px){.character-design .turntable{margin-top:48px}.character-speech{right:15%;width:145px}}
 .character-design .content-types .scene-card h3{min-height:0;margin-bottom:0}
 .character-design .scene-card:hover img{transform:none}
 .character-design .content-types .scene-card{flex:none}
@@ -167,12 +167,13 @@ body.closing-inactive .closing-group img{animation-play-state:paused}
 .character-orbit:before{content:'';position:absolute;left:50%;top:-5px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 7%,transparent)}
 .character-orbit-second{left:11%;top:9%;width:78%;height:82%;border-style:dashed;border-color:color-mix(in srgb,var(--accent) 25%,transparent);animation-direction:reverse;animation-duration:34s;animation-delay:-12s}
 .character-orbit-second:before{width:7px;height:7px;top:-4px;background:color-mix(in srgb,var(--accent) 55%,white)}
-.character.character-design .turn-image{z-index:2;transform-origin:50% 65%;animation:character-gentle-float 5.5s ease-in-out infinite}
+.character.character-design .turn-image{z-index:2;transform-origin:50% 65%}
+.character.character-design .turn-image,.character-speech{animation:character-gentle-float 5.5s ease-in-out infinite}
 .character-design .turntable:after{animation:character-floating-shadow 5.5s ease-in-out infinite}
 @keyframes character-orbit-spin{from{transform:rotate(-25deg)}to{transform:rotate(335deg)}}
 @keyframes character-gentle-float{0%,100%{transform:translateY(0) rotate(-.3deg)}50%{transform:translateY(-8px) rotate(.3deg)}}
 @keyframes character-floating-shadow{0%,100%{transform:scaleX(1);opacity:1}50%{transform:scaleX(.84);opacity:.6}}
- .character-inactive .turn-image,.character-inactive .character-orbit,.character-inactive .turntable:after{animation-play-state:paused}
+ .character.character-design.character-inactive .turn-image,.character.character-design.character-inactive .character-speech,.character-inactive .character-orbit,.character-inactive .turntable:after{animation-play-state:paused}
 @media(max-width:900px){.character-orbit{animation:none}.character-orbit:before{display:none}.character-orbit-second{transform:rotate(25deg)}}
 
 /* Identidad cromática de cada mundo; recursos de Alma provisionales en los otros tres. */
@@ -180,6 +181,6 @@ body.closing-inactive .closing-group img{animation-play-state:paused}
 .character.character-design.ed{--accent:var(--p-peach)}
 .character.character-design.vamp{--accent:var(--p-purple)}
 .character.character-design.alma{--accent:#00798d}
-.character-design:not(.alma){--character-panel:color-mix(in srgb,var(--accent) 10%,#edf2ee)}
+
 .character-design:not(.alma) .turntable:before{background:color-mix(in srgb,var(--accent) 18%,#edf2ee)}
 .character-design:not(.alma) .turn-controls button{background:var(--p-paper)}

@@ -93,11 +93,11 @@ Fredoka y Nunito: Google Fonts, licencias SIL Open Font License incluidas en ass
 No hay CDN ni solicitudes externas durante el uso de la landing.
 
 DISEÑO COMPARTIDO
-Charlie, ED y Vamp usan temporalmente el fondo e iconos de Alma.
-Cada personaje muestra sus propias escenas; se repite una cuando falta la tercera.
+Cada personaje tiene sus propios iconos, definidos en CHARACTER_ICONS de app.js.
+Cada personaje muestra su propio fondo y tres escenas distintas.
 Sus giros originales, colores y textos se conservan. Los recursos no se duplicaron.
 En app.js, CHARACTER_VISUALS reúne background, icons y scenes por personaje.
-CHARACTER_SCENE_ORDER define el orden y las repeticiones de escenas.
+CHARACTER_SCENE_ORDER define el orden de las escenas de cada personaje.
 El hero reproduce Conteniños (para landing).mp4 mudo y en loop, con recorte circular
 CSS de borde definido y dos órbitas superpuestas. Se conserva el video original.
 Para reemplazarlos: indicar la ruta de fondo (WebP), los tres iconos (PNG) y los tres
