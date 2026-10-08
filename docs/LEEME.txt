@@ -1,0 +1,93 @@
+CONTENIÑOS × FLEXFLIX
+
+ABRIR
+Doble clic en index.html. No requiere servidor, instalación, build ni internet.
+El sitio final usa HTML, CSS y JavaScript. Las herramientas Python son solo de preparación/verificación.
+
+PRESENTACIÓN
+Scroll vertical libre: sin secciones fijadas ni anclaje automático.
+Flechas arriba/abajo, PageUp/PageDown y espacio mantienen el desplazamiento nativo.
+Flechas izquierda/derecha o botones inferiores: personaje/sección anterior o siguiente.
+Home/End: comienzo/cierre.
+Cada personaje presenta tres tipos de contenido y dos escenas; sus detalles se abren al elegirlas.
+Los videos de personaje y el catálogo completo se despliegan a pedido.
+El giro acompaña el scroll sin detenerlo; también funciona con botones y swipe.
+El botón de pausa desactiva las animaciones.
+La cabecera indica Movimiento activo, pausado o reducido. Se respeta la preferencia
+del sistema al abrir; si indica reducido, el usuario puede activar las animaciones
+explícitamente con ese botón. La elección se guarda en este navegador para la landing
+y se mantiene al recargar, sin cambiar las preferencias de Windows.
+El hero tiene flotación continua perceptible también en móvil. En desktop se suman
+órbitas y un resplandor animado. Se detienen fuera de pantalla y al pausar.
+En móvil: escenas con scroll-snap y giro por swipe o botones.
+
+CONTENIDO
+data/temas.js: única fuente de los 72 temas, títulos, áreas, origen y descripciones.
+app.js: fichas de personajes, bajadas de escenas y CTA_URL (al comienzo).
+index.html: textos generales y bloque Por qué FlexFlix.
+styles.css: tres niveles de tokens y reglas responsive.
+animaciones.js: ScrollTrigger sin fijación, teclado y movimiento reducido.
+
+PENDIENTES REALES
+- URL comercial: CTA_URL está vacía. El botón explica que el enlace está pendiente.
+- Textos finales de Por qué FlexFlix: se muestran bases tomadas del brief y aviso visible.
+- Tipografía de marca: Fredoka/Nunito locales como elección provisional.
+- Videos y pósters: todos los espacios usan placeholders con ficha visible.
+- Guía educativa: el PDF recibido (CONTENIÑOS versión By FlexFlix) tiene 10 páginas de
+  identidad de personajes. No es la guía Temas educativos y propuesta de tráiler.
+  Los 72 temas y textos educativos se extrajeron de AGENTS.md.
+
+VIDEOS
+Agregar en assets/video/ y recargar index.html. Nombres exactos:
+intro-logo.mp4 / intro-logo.jpg
+charlie-loop.mp4 / charlie-loop.jpg
+ed-loop.mp4 / ed-loop.jpg
+vamp-loop.mp4 / vamp-loop.jpg
+alma-loop.mp4 / alma-loop.jpg
+teaser.mp4 / teaser.jpg
+No se procesó el archivo original Conteniños (para landing).mp4.
+Los loops/intro son mudos. El teaser tiene controles y requiere play del usuario.
+Todos los videos usan máscara de portal. Los controles del teaser (play/pausa, posición,
+tiempo y audio) se dibujan fuera de la máscara para mantenerlos nítidos y accesibles.
+
+ASSETS
+Grillas originales preservadas. Los recortes detectan los componentes sólidos por alfa >127;
+las ocho figuras se ordenan arriba/abajo y de izquierda a derecha. Escala 1:1 en todas.
+Eje del 15 % inferior de cada figura, suelas sobre una línea común y lienzo común.
+Alma: no se modificó el canal alfa ni se aplicó defringe.
+Vamp: corrección RGB suave en píxeles semitransparentes, con comparación conservada.
+prueba-giros.html permite revisar los PNG en loop, con pausa, velocidad y fondo claro/oscuro.
+docs/giros-mediciones.json registra cajas, ejes, apoyos y factores de escala.
+Cada carpeta de personaje contiene hoja-contacto.jpg.
+Las imágenes de contenido tienen variantes WebP y AVIF en varios tamaños.
+La nueva og-image.jpg se compuso con los assets de Conteniños; la anterior se conserva
+como assets/img/og-image-original.jpg.
+El naranja de FlexFlix (#ef8137) se obtuvo de los píxeles opacos del logo suministrado.
+El Lottie se embebió en JS, incluidas sus siete imágenes, sin fetch ni rutas remotas.
+
+REGENERAR (OPCIONAL, SOLO DESARROLLO)
+Python con Pillow, numpy y scipy:
+python procesar-assets.py --aprobar-defringe
+Preserva originales; genera recortes, derivados, datos educativos y logo embebido.
+--solo-giros limita el trabajo a los giros.
+El defringe necesita el indicador explícito para aplicarse a las ocho vistas de Vamp.
+
+VERIFICAR (OPCIONAL, SOLO DESARROLLO)
+Python con Playwright y Google Chrome instalado:
+python verificar-sitio.py --teclado
+Revisa en modo offline y con file:// las cinco resoluciones desktop y 390x844,
+filtros, diálogos, CTA pendiente, movimiento reducido y recorrido por teclado.
+Resultados: docs/verificacion.json. Capturas: docs/revision-*.png y .jpg.
+También se verificó 1366x650 para simular el alto útil de una notebook.
+docs/verificacion-media.json registra play, pausa, audio y búsqueda, probados con el
+video original mediante un cambio temporal en memoria del navegador. El archivo y los
+placeholders del sitio permanecen intactos.
+No sustituye una revisión en el proyector físico ni un ensayo con los videos finales.
+
+LIBRERÍAS LOCALES
+GSAP 3.14.2 y ScrollTrigger 3.14.2.
+Documentación: https://gsap.com/docs/v3/Plugins/ScrollTrigger/
+Licencia GSAP: https://gsap.com/standard-license/
+lottie-web: se conserva assets/vendor/lottie.min.js suministrado en el proyecto.
+Fredoka y Nunito: Google Fonts, licencias SIL Open Font License incluidas en assets/vendor/.
+No hay CDN ni solicitudes externas durante el uso de la landing.

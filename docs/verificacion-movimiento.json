@@ -1,0 +1,142 @@
+[
+  {
+    "width": 1366,
+    "height": 768,
+    "preference": "no-preference",
+    "before": {
+      "transforms": [
+        "matrix(0.999715, 0.0238772, -0.0238772, 0.999715, 5.52578, -22.1031)",
+        "matrix(1, -0.000201282, 0.000201282, 1, 2.30642, -9.2257)",
+        "matrix(0.999482, 0.0321782, -0.0321782, 0.999482, 6.63598, -26.5439)",
+        "matrix(0.999862, 0.0166141, -0.0166141, 0.999862, 4.55458, -18.2183)"
+      ],
+      "running": 10,
+      "pins": 4,
+      "label": "Movimiento activo",
+      "overflow": false
+    },
+    "after": {
+      "transforms": [
+        "matrix(0.999472, 0.0324968, -0.0324968, 0.999472, 6.6786, -26.7144)",
+        "matrix(0.999391, 0.0348948, -0.0348948, 0.999391, 6.99937, -27.9975)",
+        "matrix(0.999973, -0.00741003, 0.00741003, 0.999973, 1.34268, -5.3707)",
+        "matrix(0.999446, 0.0332685, -0.0332685, 0.999446, 6.78182, -27.1273)"
+      ],
+      "running": 10,
+      "pins": 4,
+      "label": "Movimiento activo",
+      "overflow": false
+    },
+    "explicit_activation": null,
+    "paused": {
+      "transforms": [
+        "matrix(0.999697, 0.0246078, -0.0246078, 0.999697, 5.62348, -22.4939)",
+        "matrix(0.999544, 0.0302044, -0.0302044, 0.999544, 6.37197, -25.4879)",
+        "matrix(0.999875, -0.0158213, 0.0158213, 0.999875, 0.218099, -0.872395)",
+        "matrix(0.999691, 0.0248594, -0.0248594, 0.999691, 5.65713, -22.6285)"
+      ],
+      "running": 0,
+      "pins": 0,
+      "label": "Movimiento pausado",
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "preference": "no-preference",
+    "before": {
+      "transforms": [
+        "matrix(1, 0, 0, 1, 0, -13.5187)",
+        "matrix(1, 0, 0, 1, 0, -13.5187)",
+        "matrix(1, 0, 0, 1, 0, -13.5187)",
+        "matrix(1, 0, 0, 1, 0, -13.5187)"
+      ],
+      "running": 4,
+      "pins": 0,
+      "label": "Movimiento activo",
+      "overflow": false
+    },
+    "after": {
+      "transforms": [
+        "matrix(1, 0, 0, 1, 0, -3.53819)",
+        "matrix(1, 0, 0, 1, 0, -3.53819)",
+        "matrix(1, 0, 0, 1, 0, -3.53819)",
+        "matrix(1, 0, 0, 1, 0, -3.53819)"
+      ],
+      "running": 4,
+      "pins": 0,
+      "label": "Movimiento activo",
+      "overflow": false
+    },
+    "explicit_activation": null,
+    "paused": {
+      "transforms": [
+        "matrix(1, 0, 0, 1, 0, -1.71832)",
+        "matrix(1, 0, 0, 1, 0, -1.71832)",
+        "matrix(1, 0, 0, 1, 0, -1.71832)",
+        "matrix(1, 0, 0, 1, 0, -1.71832)"
+      ],
+      "running": 0,
+      "pins": 0,
+      "label": "Movimiento pausado",
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "preference": "reduce",
+    "before": {
+      "transforms": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "running": 0,
+      "pins": 0,
+      "label": "Movimiento reducido",
+      "overflow": false
+    },
+    "after": {
+      "transforms": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "running": 0,
+      "pins": 0,
+      "label": "Movimiento reducido",
+      "overflow": false
+    },
+    "explicit_activation": {
+      "transforms": [
+        "matrix(0.999821, 0.0189395, -0.0189395, 0.999821, 4.86551, -19.462)",
+        "matrix(0.999978, -0.00668587, 0.00668587, 0.999978, 1.43949, -5.75797)",
+        "matrix(0.999417, 0.0341364, -0.0341364, 0.999417, 6.89793, -27.5917)",
+        "matrix(0.999949, 0.0100613, -0.0100613, 0.999949, 3.67846, -14.7138)"
+      ],
+      "running": 10,
+      "pins": 4,
+      "label": "Movimiento activo",
+      "overflow": false
+    },
+    "paused": {
+      "transforms": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "running": 0,
+      "pins": 0,
+      "label": "Movimiento pausado",
+      "overflow": false
+    },
+    "errors": []
+  }
+]

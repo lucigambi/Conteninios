@@ -1,0 +1,13 @@
+{
+  "before": {
+    "paused": true,
+    "muted": false,
+    "duration": 23.231542
+  },
+  "play": true,
+  "pause": true,
+  "mute": true,
+  "seek": true,
+  "source_unmodified": true,
+  "method": "Temporary DOM only; source video unchanged"
+}

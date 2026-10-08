@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d28">
+  <meta name="description" content="Cuatro personajes, cuatro maneras de acercarse al conocimiento. Una propuesta educativa de Conteniños × FlexFlix.">
+  <meta property="og:title" content="Conteniños × FlexFlix · Cruzá el portal">
+  <meta property="og:description" content="Los mismos personajes. Ahora enseñan. 72 temas y cuatro mundos por descubrir.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:type" content="website">
+  <title>Conteniños × FlexFlix — Cruzá el portal</title>
+  <link rel="icon" href="assets/favicon/favicon-32x32.png">
+  <link rel="preload" href="assets/vendor/Fredoka.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/vendor/Nunito.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/vendor/gsap.min.js"></script>
+  <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="assets/vendor/lottie.min.js"></script>
+  <script defer src="assets/img/lottie/flexflix-logo.js"></script>
+  <script defer src="data/temas.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="animaciones.js"></script>
+</head>
+<body>
+  <a class="skip" href="#numeros">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Conteniños, inicio"><img src="assets/img/logo-conte/logo-conteninos-400.webp" alt="Conteniños" width="94" height="64"></a>
+    <nav class="top-nav" aria-label="Navegación principal"><a href="#charlie">Los personajes</a><a href="#temas">Los contenidos</a><a href="#trailer">El tráiler</a></nav>
+    <div class="header-actions"><button class="motion-status" data-motion-toggle aria-pressed="false"><i aria-hidden="true"></i><span class="motion-label">Movimiento activo</span></button><a class="header-cta" href="#cierre">Un nuevo universo <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <nav class="chapter-nav" aria-label="Capítulos"></nav>
+  <main>
+    <section class="hero dark chapter" id="inicio" data-label="El portal">
+      <div class="nebula" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✦</span> CONTENIÑOS × FLEXFLIX</p>
+        <h1>Los mismos<br>personajes.<br><em>Ahora enseñan.</em></h1>
+        <p class="hero-description">Un universo que ya enamora.<br>Cuatro nuevas maneras de descubrir el mundo.</p>
+        <a class="button button-lime" href="#numeros">Cruzá el portal <span aria-hidden="true">↗</span></a>
+        <div class="hero-signature"><div class="flex-logo" aria-label="by FlexFlix.ai"></div><span>Una propuesta para crecer juntos.</span></div>
+      </div>
+      <div class="hero-world" aria-label="Charlie, ED, Vamp y Alma abren un nuevo universo educativo">
+        <div class="portal-orbit orbit-one" aria-hidden="true"></div><div class="portal-orbit orbit-two" aria-hidden="true"></div>
+        <div id="intro-inline" class="hero-intro"></div>
+        <div class="hero-character hero-alma" data-depth="16"><picture><source type="image/avif" srcset="assets/img/personajes/alma-flotando-400.avif 400w, assets/img/personajes/alma-flotando-800.avif 800w"><img src="assets/img/personajes/alma-flotando-800.webp" width="1184" height="1375" alt="Alma flotando" sizes="25vw"></picture></div>
+        <div class="hero-character hero-vamp" data-depth="24"><picture><source type="image/avif" srcset="assets/img/personajes/vamp-volando-400.avif 400w, assets/img/personajes/vamp-volando-800.avif 800w"><img src="assets/img/personajes/vamp-volando-800.webp" width="1184" height="1346" alt="Vamp volando" sizes="27vw"></picture></div>
+        <div class="hero-character hero-charlie" data-depth="10"><picture><source type="image/avif" srcset="assets/img/personajes/charlie-corriendo-400.avif 400w, assets/img/personajes/charlie-corriendo-800.avif 800w"><img src="assets/img/personajes/charlie-corriendo-800.webp" width="1184" height="1354" alt="Charlie corriendo con su libro" sizes="28vw"></picture></div>
+        <div class="hero-character hero-ed" data-depth="20"><picture><source type="image/avif" srcset="assets/img/personajes/ed-corriendo-400.avif 400w, assets/img/personajes/ed-corriendo-800.avif 800w"><img src="assets/img/personajes/ed-corriendo-800.webp" width="1184" height="1354" alt="ED corriendo" sizes="27vw"></picture></div>
+        <span class="spark spark-one" aria-hidden="true">✦</span><span class="spark spark-two" aria-hidden="true">✧</span><span class="spark spark-three" aria-hidden="true">✦</span>
+      </div>
+      <div class="hero-foot"><span>UNA IDENTIDAD COMPARTIDA. CUATRO MIRADAS.</span><a href="#numeros">Deslizá para descubrir <span aria-hidden="true">↓</span></a><button class="text-button" data-intro>Ver la intro <span aria-hidden="true">▷</span></button></div>
+    </section>
+    <section class="numbers chapter" id="numeros" data-label="La propuesta">
+      <div class="section-top"><p class="eyebrow">01 / EL PUNTO DE PARTIDA</p><span class="section-note">Pequeñas preguntas. Grandes descubrimientos.</span></div>
+      <h2>Todo un mundo.<br><em>Mucho por aprender.</em></h2>
+      <div class="stats"><div><strong data-count="4">4</strong><span>personajes inolvidables</span></div><div><strong data-count="72">72</strong><span>temas para descubrir</span></div><div><strong data-count="8">8</strong><span>escenas para imaginar</span></div><div><strong>3:00</strong><span>minutos de tráiler propuesto</span></div></div>
+      <div class="head-start"><span class="head-start-icon" aria-hidden="true">↗</span><p><strong>43 de los 72 temas ya existen<br>en Currícula FlexFlix.</strong><span>No partimos de cero. Partimos de una gran base.</span></p><div class="coverage"><div class="coverage-bar"><i></i></div><span>43 Currícula FlexFlix <b>29 Propuesta</b></span></div></div>
+      <p class="age-note">Pensado para nivel inicial · 3 a 5 años como hipótesis de desarrollo</p>
+    </section>
+    <div id="personajes"></div>
+    <section class="topic-bank chapter" id="temas" data-label="72 temas">
+      <div class="section-top"><p class="eyebrow">06 / EL BANCO DE IDEAS</p><span class="section-note">Una pregunta puede empezar un gran viaje.</span></div>
+      <div class="bank-heading"><h2>72 puertas<br><em>al conocimiento.</em></h2><p>Elegí un personaje. Encontrá una idea.<br>Descubrí todo lo que puede enseñar.</p></div>
+      <details class="bank-library"><summary>Explorar los 72 temas <span>+</span></summary>
+      <div class="filters"><div class="filter-group" aria-label="Filtrar por personaje"><button class="filter active" data-character="all" aria-pressed="true">Todos</button><button class="filter" data-character="charlie" aria-pressed="false"><i class="dot charlie-dot"></i>Charlie</button><button class="filter" data-character="ed" aria-pressed="false"><i class="dot ed-dot"></i>ED</button><button class="filter" data-character="vamp" aria-pressed="false"><i class="dot vamp-dot"></i>Vamp</button><button class="filter" data-character="alma" aria-pressed="false"><i class="dot alma-dot"></i>Alma</button></div><label class="origin-label">Origen <select id="origin-filter"><option value="all">Todos los orígenes</option><option value="curricula">Currícula FlexFlix</option><option value="propuesta">Propuesta</option></select></label></div>
+      <p id="filter-count" class="filter-count" role="status" aria-live="polite"></p>
+      <div class="topic-grid" id="topic-grid"></div><button id="more-topics" class="button button-outline" hidden>Ver más temas <span>+</span></button>
+      </details>
+    </section>
+    <section class="trailer chapter" id="trailer" data-label="El tráiler">
+      <div class="section-top"><p class="eyebrow">07 / UNA HISTORIA POR CONTAR</p><span class="section-note">Del primer encuentro al próximo descubrimiento.</span></div>
+      <div class="trailer-main"><div class="trailer-copy"><h2>Una pequeña<br>aventura.<br><em>Un gran comienzo.</em></h2><p>Un primer vistazo al universo Conteniños.<br>Después, tres minutos para imaginar<br>lo que podemos crear juntos.</p><span class="stamp">4 MIRADAS<br><b>1 UNIVERSO</b></span></div><div id="teaser-slot"></div></div>
+      <div class="timeline-heading"><h3>Lo que viene: un tráiler de 3:00</h3><span>4 historias de 35 s + apertura y cierre a definir</span></div>
+      <ol class="timeline"><li class="timeline-open"><span>APERTURA</span><strong>A definir</strong></li><li class="charlie"><span>CHARLIE · 35 S</span><strong>La semilla</strong><p>Observar cómo crece, a lo largo de varios días.</p></li><li class="ed"><span>ED · 35 S</span><strong>Historia de los juguetes</strong><p>Juegos que atraviesan el tiempo y unen amigos.</p></li><li class="vamp"><span>VAMP · 35 S</span><strong>Carnavales</strong><p>Música, máscaras y una celebración en comunidad.</p></li><li class="alma"><span>ALMA · 35 S</span><strong>Las emociones</strong><p>Reconocer alegría, tristeza y enojo.</p></li><li class="timeline-open"><span>CIERRE</span><strong>A definir</strong></li></ol>
+    </section>
+    <section class="why chapter" id="flexflix" data-label="Por qué FlexFlix">
+      <div class="section-top"><p class="eyebrow">08 / EL PRÓXIMO PASO, JUNTOS</p><span class="section-note">Conteniños × FlexFlix</span></div>
+      <h2>La imaginación ya está.<br><em>Hagámosla crecer.</em></h2>
+      <div class="why-grid"><article><span class="why-symbol" aria-hidden="true">✳</span><span class="mini-label">01 / CURRÍCULA</span><h3>Algo valioso<br>para enseñar.</h3><p>43 temas de esta propuesta ya existen en Currícula FlexFlix.</p><span class="pending-copy">Texto final pendiente</span></article><article><span class="why-symbol" aria-hidden="true">✦</span><span class="mini-label">02 / PRODUCCIÓN GRÁFICA</span><h3>Un mundo que<br>dan ganas de mirar.</h3><p>Cuatro personajes y ocho escenas ilustrativas para visualizar la propuesta.</p><span class="pending-copy">Texto final pendiente</span></article><article><span class="why-symbol" aria-hidden="true">↗</span><span class="mini-label">03 / PLATAFORMA</span><h3>Un lugar para<br>seguir descubriendo.</h3><p>FlexFlix: una plataforma educativa argentina con inteligencia artificial.</p><span class="pending-copy">Texto final pendiente</span></article></div>
+    </section>
+    <section class="closing dark chapter" id="cierre" data-label="Crecer juntos">
+      <div class="nebula" aria-hidden="true"></div><div class="closing-portal" aria-hidden="true"></div>
+      <div class="closing-copy"><p class="eyebrow">09 / EL PORTAL QUEDA ABIERTO</p><h2>Ellos ya tienen<br>su magia.<br><em>Démosles un mundo<br>para enseñar.</em></h2><div class="flex-logo" aria-label="by FlexFlix.ai"></div><a class="button button-lime main-cta" href="#" data-cta>Desarrollemos Conteniños <span aria-hidden="true">↗</span></a></div>
+      <picture class="closing-group"><source type="image/avif" srcset="assets/img/personajes/personajes-grupo-400.avif 400w, assets/img/personajes/personajes-grupo-800.avif 800w"><img src="assets/img/personajes/personajes-grupo-800.webp" loading="lazy" alt="Los cuatro personajes de Conteniños juntos" width="1184" height="1375" sizes="45vw"></picture>
+      <footer><span>CONTENIÑOS × FLEXFLIX</span><span>Una propuesta para crecer juntos.</span><a href="#inicio">Volver al comienzo ↑</a></footer>
+    </section>
+  </main>
+  <div class="presentation-controls"><button id="previous-chapter" aria-label="Retroceder">↑</button><span id="chapter-position" aria-live="off">01 / 10</span><button id="next-chapter" aria-label="Avanzar">↓</button><button id="toggle-motion" data-motion-toggle aria-pressed="false" aria-label="Pausar animaciones">Ⅱ</button></div>
+  <dialog id="detail-dialog"><button class="dialog-close" aria-label="Cerrar detalle">×</button><div id="dialog-content"></div></dialog>
+  <noscript><p class="noscript-note">Activá JavaScript para explorar los personajes y el banco de 72 temas.</p></noscript>
+</body>
+</html>

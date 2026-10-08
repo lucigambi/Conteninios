@@ -1,0 +1,89 @@
+[
+  {
+    "overflow": false,
+    "pins": 0,
+    "snaps": 0,
+    "types": 12,
+    "bankClosed": true,
+    "stableY": 1613,
+    "size": [
+      1280,
+      720
+    ],
+    "wheelDelta": 173,
+    "errors": []
+  },
+  {
+    "overflow": false,
+    "pins": 0,
+    "snaps": 0,
+    "types": 12,
+    "bankClosed": true,
+    "stableY": 1709,
+    "size": [
+      1366,
+      768
+    ],
+    "wheelDelta": 173,
+    "errors": []
+  },
+  {
+    "overflow": false,
+    "pins": 0,
+    "snaps": 0,
+    "types": 12,
+    "bankClosed": true,
+    "stableY": 1973,
+    "size": [
+      1440,
+      900
+    ],
+    "wheelDelta": 173,
+    "errors": []
+  },
+  {
+    "overflow": false,
+    "pins": 0,
+    "snaps": 0,
+    "types": 12,
+    "bankClosed": true,
+    "stableY": 1901,
+    "size": [
+      1536,
+      864
+    ],
+    "wheelDelta": 173,
+    "errors": []
+  },
+  {
+    "overflow": false,
+    "pins": 0,
+    "snaps": 0,
+    "types": 12,
+    "bankClosed": true,
+    "stableY": 2333,
+    "size": [
+      1920,
+      1080
+    ],
+    "wheelDelta": 173,
+    "errors": []
+  },
+  {
+    "overflow": false,
+    "pins": 0,
+    "snaps": 0,
+    "types": 12,
+    "bankClosed": true,
+    "stableY": 1922,
+    "size": [
+      390,
+      844
+    ],
+    "wheelDelta": 173,
+    "errors": []
+  },
+  {
+    "reducedMotion": "ok"
+  }
+]
