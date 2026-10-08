@@ -9,8 +9,9 @@ Scroll vertical libre: sin secciones fijadas ni anclaje automático.
 Flechas arriba/abajo, PageUp/PageDown y espacio mantienen el desplazamiento nativo.
 Flechas izquierda/derecha o botones inferiores: personaje/sección anterior o siguiente.
 Home/End: comienzo/cierre.
-Cada personaje presenta tres tipos de contenido y dos escenas; sus detalles se abren al elegirlas.
-Los videos de personaje se despliegan a pedido.
+Cada personaje presenta tres tarjetas ilustradas, un globo de diálogo y su giro con flechas.
+Órbitas y flotación suaves: se pausan fuera de pantalla, con pausa o movimiento reducido.
+Las tarjetas ya no abren detalles y no hay videos desplegables en los personajes.
 El giro acompaña el scroll sin detenerlo; también funciona con botones y swipe.
 El botón de pausa desactiva las animaciones.
 La cabecera indica Movimiento activo, pausado o reducido. Se respeta la preferencia
@@ -19,7 +20,7 @@ explícitamente con ese botón. La elección se guarda en este navegador para la
 y se mantiene al recargar, sin cambiar las preferencias de Windows.
 El hero tiene flotación continua perceptible también en móvil. En desktop se suman
 órbitas y un resplandor animado. Se detienen fuera de pantalla y al pausar.
-En móvil: escenas con scroll-snap y giro por swipe o botones.
+En móvil: tarjetas apiladas y giro por swipe o botones.
 
 CONTENIDO
 data/temas.js: archivo de referencia conservado; la landing no carga ni muestra el catálogo curricular.
@@ -75,7 +76,7 @@ VERIFICAR (OPCIONAL, SOLO DESARROLLO)
 Python con Playwright y Google Chrome instalado:
 python verificar-sitio.py --teclado
 Revisa en modo offline y con file:// las cinco resoluciones desktop y 390x844,
-giros, las ocho escenas, los tres accesos pendientes, movimiento reducido y recorrido por teclado.
+giros, las doce tarjetas de escenas, los tres accesos pendientes, movimiento reducido y recorrido por teclado.
 Resultados: docs/verificacion.json. Capturas: docs/revision-*.png y .jpg.
 También se verificó 1366x650 para simular el alto útil de una notebook.
 docs/verificacion-media.json registra play, pausa, audio y búsqueda, probados con el
@@ -90,3 +91,15 @@ Licencia GSAP: https://gsap.com/standard-license/
 lottie-web: se conserva assets/vendor/lottie.min.js suministrado en el proyecto.
 Fredoka y Nunito: Google Fonts, licencias SIL Open Font License incluidas en assets/vendor/.
 No hay CDN ni solicitudes externas durante el uso de la landing.
+
+DISEÑO COMPARTIDO
+Charlie, ED y Vamp usan temporalmente el fondo e iconos de Alma.
+Cada personaje muestra sus propias escenas; se repite una cuando falta la tercera.
+Sus giros originales, colores y textos se conservan. Los recursos no se duplicaron.
+En app.js, CHARACTER_VISUALS reúne background, icons y scenes por personaje.
+CHARACTER_SCENE_ORDER define el orden y las repeticiones de escenas.
+El hero reproduce Conteniños (para landing).mp4 mudo y en loop, con recorte circular
+CSS de borde definido y dos órbitas superpuestas. Se conserva el video original.
+Para reemplazarlos: indicar la ruta de fondo (WebP), los tres iconos (PNG) y los tres
+prefijos de escenas (sin extensión). Cada escena usa PNG y variantes -400/-800/-1200
+WebP/AVIF. CHARACTER_FEATURES reúne títulos, descripciones y frases de los globos.

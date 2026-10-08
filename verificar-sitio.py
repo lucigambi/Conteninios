@@ -62,11 +62,10 @@ with sync_playwright() as p:
                 page.wait_for_timeout(200)
                 after=section.get_attribute('data-frame')
                 report['interactions'][character+'_turn']=int(after)==(int(before)+1)%8
-            for scene in page.locator('[data-scene]').all():
-                scene.click()
-                assert page.locator('dialog').evaluate('(e)=>e.open')
-                page.keyboard.press('Escape')
-            report['interactions']['eight_scenes']=page.locator('[data-scene]').count()==8
+            report['interactions']['twelve_scenes']=page.locator('.character .scene-card').count()==12
+            report['interactions']['four_bubbles']=page.locator('.character-speech').count()==4
+            report['interactions']['eight_orbits']=page.locator('.character-orbit').count()==8
+            report['interactions']['no_old_controls']=page.locator('.character .frame-number,.character .turn-hint,.character .character-video,.character .scene-more').count()==0
             for cta in page.locator('[data-cta]').all():
                 cta.click()
                 assert 'Pronto vas a poder entrar' in page.locator('dialog').inner_text()

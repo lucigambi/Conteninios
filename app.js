@@ -13,7 +13,8 @@ const PERSONAJES = [
     {code:'V03',title:'Montañas, llanuras y costas',text:'Vamp llegó a un valle rodeado de montañas. Una nueva amiga lo espera para mirar el paisaje y seguir explorando.',explore:'Descubrí qué hace distinto a cada paisaje y encontrá palabras para contar lo que ves.'}]},
   {id:'alma',name:'Alma',quote:'Lo que sentís también cuenta.',description:'Alma es una pequeña fantasma que te acompaña a descubrir tus emociones. Con ella vas a poner en palabras lo que sentís, pedir ayuda y aprender a cuidar a tus amigos.',short:'Emociones · Cuidado · Vínculos',loop:'Alma flotando, come una galletita y toma leche.',loopTitle:'Sentir también es descubrir.',scenes:[
     {code:'A01',title:'Las emociones',text:'Una sonrisa, un ceño fruncido, una carita triste. Jugá con Alma frente al espejo y descubrí qué nos cuentan nuestros gestos.',explore:'Poneles nombre a la alegría, la tristeza y el enojo. ¿Cómo te sentís hoy?'},
-    {code:'A16',title:'Puedo reparar un error',text:'¡Uy, se volcó la leche! Alma busca un paño y se pone a limpiar. A veces nos equivocamos, y podemos hacer algo para ayudar.',explore:'Pensá con Alma cómo reparar un pequeño accidente y cuidar lo que compartimos.'}]}
+    {code:'A16',title:'Puedo reparar un error',text:'¡Uy, se volcó la leche! Alma busca un paño y se pone a limpiar. A veces nos equivocamos, y podemos hacer algo para ayudar.',explore:'Pensá con Alma cómo reparar un pequeño accidente y cuidar lo que compartimos.'},
+    {title:'Jugar es mejor juntos',text:'Alma comparte un bloque con su amiga y la construcción sigue creciendo. Cada una aporta una pieza y una idea para crear algo juntas.',explore:'Descubrí cómo compartir, esperar tu turno y escuchar las ideas de tus amigos puede hacer más divertido el juego.'}]}
 ];
 const escapeHTML = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function picture(path,alt,sizes='(max-width: 900px) 85vw, 30vw') {
@@ -43,28 +44,34 @@ function setFrame(section,n) {
   if(Number(section.dataset.frame)===index)return;
   section.dataset.frame=index;
   section.querySelector('.turn-image').src=`assets/img/giros/${section.id}/${section.id}-${String(index).padStart(2,'0')}.webp`;
-  section.querySelector('.frame-number').textContent=`${String(index+1).padStart(2,'0')} / 08`;
+  const counter=section.querySelector('.frame-number');
+  if(counter)counter.textContent=`${String(index+1).padStart(2,'0')} / 08`;
 }
+// Fondo e iconos provisionales; las escenas son propias de cada personaje.
+// Los giros conservan las ocho vistas originales de cada personaje.
+const CHARACTER_SCENE_ORDER = {charlie:[1,2,1],ed:[1,2,1],vamp:[2,2,1],alma:[1,2,3]};
+const CHARACTER_VISUALS = Object.fromEntries(PERSONAJES.map(p=>[p.id, {
+  background:'assets/img/fondos/alma-fondo.webp',
+  icons:['assets/img/iconos/alma-emociones.png','assets/img/iconos/alma-cuidado.png','assets/img/iconos/alma-amistad.png'],
+  scenes:CHARACTER_SCENE_ORDER[p.id].map(n=>`assets/img/escenas/${p.id}-escena-${n}`)
+}]));
+const CHARACTER_FEATURES = {
+  charlie:{speech:'¿Qué descubrimos hoy?',items:[['Lengua','Cuentos, rimas y juegos con palabras.','Inventamos otro final'],['Matemática','Números y formas para jugar y construir.','Figuras geométricas'],['Ciencias','Plantas, animales y pequeños descubrimientos.','La semilla']]},
+  ed:{speech:'¿Viajamos en el tiempo?',items:[['Otros tiempos','Juguetes, escuelas y costumbres de antes.','Historia de los juguetes'],['Inventos','Cartas, trenes y objetos con historia.','Las cartas'],['Recuerdos','Música, culturas y amistades que crecen.','Un objeto, un recuerdo']]},
+  vamp:{speech:'¿Adónde vamos hoy?',items:[['Paisajes','Selvas, montañas y mundos bajo el agua.','Montañas, llanuras y costas'],['Viajes','Mapas, transportes y formas de vivir.','Un mapa para explorar'],['Culturas','Fiestas, juegos y un lugar para todos.','Carnavales']]},
+  alma:{speech:'¿Cómo te sentís hoy?',items:[['Emociones','Reconocer y poner en palabras lo que sentimos.','Las emociones'],['Cuidado','Pedir ayuda, poner límites y encontrar calma.','Puedo reparar un error'],['Amistad','Compartir, escuchar y aprender a reparar.','Jugar es mejor juntos']]}
+};
 function buildCharacters() {
-  document.querySelector('#personajes').innerHTML=PERSONAJES.map((p,i)=>{
-    const summaries={
-      charlie:[['Lengua','Cuentos, rimas y juegos con palabras.'],['Matemática','Números y formas para jugar y construir.'],['Ciencias','Plantas, animales y pequeños descubrimientos.']],
-      ed:[['Otros tiempos','Juguetes, escuelas y costumbres de antes.'],['Inventos','Cartas, trenes y objetos con historia.'],['Recuerdos','Música, culturas y amistades que crecen.']],
-      vamp:[['Paisajes','Selvas, montañas y mundos bajo el agua.'],['Viajes','Mapas, transportes y formas de vivir.'],['Culturas','Fiestas, juegos y un lugar para todos.']],
-      alma:[['Emociones','Reconocer y poner en palabras lo que sentimos.'],['Cuidado','Pedir ayuda, poner límites y encontrar calma.'],['Amistad','Compartir, escuchar y aprender a reparar.']]
-    };
-    return `<section class="character ${p.id} chapter" id="${p.id}" data-label="${p.name}" data-frame="0"><div class="character-inner">
-      <div class="section-top"><p class="eyebrow">0${i+1} / EL MUNDO DE ${p.name.toUpperCase()}</p><span class="section-note">APRENDÉ JUGANDO CON ${p.name.toUpperCase()}</span></div>
-      <div class="character-heading"><h2>${p.name}<span aria-hidden="true">.</span></h2><p>${p.quote}</p></div>
+  document.querySelector('#personajes').innerHTML=PERSONAJES.map(p=>{
+    const media=CHARACTER_VISUALS[p.id],feature=CHARACTER_FEATURES[p.id];
+    const turnArrow=direction=>`<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="${direction<0?'M25 16H7m8-8-8 8 8 8':'M7 16h18m-8-8 8 8-8 8'}"/></svg>`;
+    const features=feature.items.map(([title,text,sceneTitle],n)=>`<article><div class="feature-heading"><img class="feature-icon" src="${media.icons[n]}" alt="" width="269" height="240" loading="lazy"><div class="feature-copy"><h3>${title}</h3><p>${text}</p></div></div><div class="scene-card">${picture(media.scenes[n],`${p.name}: ${p.scenes[CHARACTER_SCENE_ORDER[p.id][n]-1].title}`,'(max-width: 900px) 85vw, 22vw')}<h3>${sceneTitle}</h3></div></article>`).join('');
+    return `<section class="character character-design ${p.id} chapter" id="${p.id}" data-label="${p.name}" data-frame="0" style="--character-background:url('${media.background}')"><div class="character-inner">
       <div class="character-stage">
-        <div class="turntable"><img class="turn-image" src="assets/img/giros/${p.id}/${p.id}-00.webp" alt="Giro de ocho vistas de ${p.name}" width="420" height="610" loading="lazy" draggable="false"><div class="turn-controls"><button data-turn="-1" aria-label="Vista anterior de ${p.name}">‹</button><span class="frame-number">01 / 08</span><button data-turn="1" aria-label="Vista siguiente de ${p.name}">›</button></div><span class="turn-hint">${mobileQuery.matches?'DESLIZÁ SOBRE EL PERSONAJE':'GIRÁ CON EL SCROLL O LAS FLECHAS'}</span></div>
-        <div class="character-content"><p class="character-description">${p.description}</p><div class="content-types">${summaries[p.id].map(([title,text])=>`<article><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>
-          <div class="scene-grid">${p.scenes.map((scene,n)=>`<button class="scene-card" data-scene="${p.id}:${n}">${picture(`assets/img/escenas/${p.id}-escena-${n+1}`,scene.title)}<h3>${scene.title}</h3><span class="scene-more">Descubrí esta aventura ↗</span></button>`).join('')}</div>
-          <details class="character-video"><summary>Conocé a ${p.name} en movimiento <span>+</span></summary>${videoSlot(`${p.id}-loop`,p.loop)}</details>
-        </div>
+        <div class="turntable"><div class="character-orbits" aria-hidden="true"><span class="character-orbit"></span><span class="character-orbit character-orbit-second"></span></div><img class="turn-image" src="assets/img/giros/${p.id}/${p.id}-00.webp" alt="Giro de ocho vistas de ${p.name}" width="420" height="610" loading="lazy" draggable="false"><div class="turn-controls"><button data-turn="-1" aria-label="Vista anterior de ${p.name}">${turnArrow(-1)}</button><button data-turn="1" aria-label="Vista siguiente de ${p.name}">${turnArrow(1)}</button></div><p class="character-speech">${feature.speech}</p></div>
+        <div class="character-content"><div class="character-heading"><h2>${p.name}<span aria-hidden="true">.</span></h2><p>${p.quote}</p></div><p class="character-description">${p.description}</p><div class="content-types">${features}</div></div>
       </div>
     </div></section>`;
-
   }).join('');
   document.querySelectorAll('.character').forEach(section=>{
     section.querySelectorAll('[data-turn]').forEach(b=>b.addEventListener('click',()=>{preloadFrames(section.id);setFrame(section,Number(section.dataset.frame)+Number(b.dataset.turn));}));
@@ -77,7 +84,12 @@ function buildCharacters() {
   document.querySelectorAll('.character').forEach(s=>preloadObserver.observe(s));
 }
 buildCharacters();
-document.querySelector('#intro-inline').innerHTML=videoSlot('intro-logo','Logo ensamblándose.',{intro:true});
+document.querySelector('#intro-inline').innerHTML=videoSlot('intro-logo','Una aventura con los cuatro amigos.',{intro:true});
+const heroVideoSlot=document.querySelector('#intro-inline [data-video]');
+heroVideoSlot.dataset.source='assets/video/Conteniños (para landing).mp4';
+heroVideoSlot.dataset.kind='loop';
+heroVideoSlot.classList.add('video-circle');
+document.querySelector('#intro-inline').insertAdjacentHTML('beforeend','<div class="video-orbits" aria-hidden="true"><span class="video-orbit"></span><span class="video-orbit video-orbit-second"></span></div>');
 document.querySelector('#teaser-slot').innerHTML=videoSlot('teaser','Teaser completo de 23 s. Cierra con «by FlexFlix.ai».',{teaser:true});
 
 const dialog=document.querySelector('#detail-dialog');
@@ -118,7 +130,7 @@ function initVideos(scope=document){
       video.addEventListener('loadedmetadata',()=>{slot.classList.add('ready');poster.remove();if(kind==='teaser')addVideoControls(slot,video);syncMedia();},{once:true});
       video.addEventListener('error',()=>{video.remove();slot.dataset.missing='true';},{once:true});
       poster.addEventListener('load',()=>video.poster=poster.src,{once:true});
-      slot.append(video);video.src=`assets/video/${name}.mp4`;video.load();
+      slot.append(video);video.src=slot.dataset.source||`assets/video/${name}.mp4`;video.load();
     }),{rootMargin:'150px'});
     observer.observe(slot);videoObservers.push(observer);
   });
@@ -151,6 +163,7 @@ function inViewport(el){const r=el.getBoundingClientRect();return r.bottom>0&&r.
 function syncMedia(){
   const staticMode=isMotionReduced()||motionPaused||document.hidden;
   document.body.classList.toggle('ambient-inactive',staticMode||dialog.open||!inViewport(document.querySelector('.hero')));
+  document.querySelectorAll('.character-design').forEach(section=>section.classList.toggle('character-inactive',staticMode||dialog.open||!inViewport(section.querySelector('.turntable'))));
   document.body.classList.toggle('closing-inactive',staticMode||dialog.open||!inViewport(document.querySelector('.closing')));
   lotties.forEach(({container,anim,layer})=>{const play=!staticMode&&!dialog.open&&inViewport(container);layer.hidden=!play;container.querySelector('img').style.opacity=play?'0':'1';play?anim.play():anim.pause();});
   document.querySelectorAll('video').forEach(v=>{
