@@ -43,7 +43,7 @@ with sync_playwright() as p:
             result.update(id=stop['id'],stage=stop['stage']);checks.append(result)
             shot=page.screenshot();im=Image.open(BytesIO(shot)).convert('RGB');im.thumbnail((400,300) if w>900 else (195,422))
             captures.append((stop,im.copy()))
-            if w==1366 and h==768 and (stop['id'] in ['inicio','charlie','alma','trailer','cierre']):
+            if w==1366 and h==768 and (stop['id'] in ['inicio','charlie','alma','trailer']):
                 (ROOT/f'docs/revision-{stop["id"]}-{stop["stage"]}.png').write_bytes(shot)
         tw,th=(400,320) if w>900 else (195,450)
         sheet=Image.new('RGB',(tw*4,th*((len(captures)+3)//4)),'#d0d0d0');draw=ImageDraw.Draw(sheet)
@@ -70,7 +70,7 @@ with sync_playwright() as p:
                 cta.click()
                 assert 'Pronto vas a poder entrar' in page.locator('dialog').inner_text()
                 page.keyboard.press('Escape')
-            report['interactions']['three_ctas']=page.locator('[data-cta]').count()==3
+            report['interactions']['two_ctas']=page.locator('[data-cta]').count()==2
             report['interactions']['no_catalog']=page.locator('#temas,#numeros,#flexflix,.timeline').count()==0
         if w==390:
             report['interactions']['mobile_no_pins']=page.locator('.pinned-character').count()==0

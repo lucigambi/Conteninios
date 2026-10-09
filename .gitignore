@@ -1,0 +1,4 @@
+# Originales de producción: se conservan localmente; el sitio usa las copias WebM.
+assets/video/*.mov
+# Pósters intermedios; el sitio usa sus versiones WebP con alfa.
+assets/video/*-alpha.png

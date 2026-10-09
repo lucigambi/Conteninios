@@ -290,7 +290,7 @@ window.TEMAS = [
   {
     "codigo": "V01",
     "personaje": "vamp",
-    "area": "Paisajes del mundo",
+    "area": "Paisajes del universo",
     "titulo": "Islas Galápagos",
     "origen": "curricula",
     "descripcion": "Conocer un paisaje de islas y observar algunos animales que viven en ellas."
@@ -298,7 +298,7 @@ window.TEMAS = [
   {
     "codigo": "V02",
     "personaje": "vamp",
-    "area": "Paisajes del mundo",
+    "area": "Paisajes del universo",
     "titulo": "Amazonia",
     "origen": "curricula",
     "descripcion": "Descubrir un paisaje de selva y río y algunas formas de vivir en él."
@@ -306,7 +306,7 @@ window.TEMAS = [
   {
     "codigo": "V03",
     "personaje": "vamp",
-    "area": "Paisajes del mundo",
+    "area": "Paisajes del universo",
     "titulo": "Montañas, llanuras y costas",
     "origen": "propuesta",
     "descripcion": "Comparar paisajes y encontrar palabras para describir alturas, superficies y encuentros con el agua."
@@ -314,7 +314,7 @@ window.TEMAS = [
   {
     "codigo": "V04",
     "personaje": "vamp",
-    "area": "Paisajes del mundo",
+    "area": "Paisajes del universo",
     "titulo": "La magia de la Antártida",
     "origen": "curricula",
     "descripcion": "Conocer un paisaje de hielo y descubrir cómo se preparan quienes lo visitan."
@@ -322,7 +322,7 @@ window.TEMAS = [
   {
     "codigo": "V05",
     "personaje": "vamp",
-    "area": "Paisajes del mundo",
+    "area": "Paisajes del universo",
     "titulo": "La Gran Barrera de Coral",
     "origen": "curricula",
     "descripcion": "Descubrir un paisaje bajo el agua y reconocer que allí viven muchos seres distintos."
@@ -330,7 +330,7 @@ window.TEMAS = [
   {
     "codigo": "V06",
     "personaje": "vamp",
-    "area": "Paisajes del mundo",
+    "area": "Paisajes del universo",
     "titulo": "El Gran Cañón",
     "origen": "curricula",
     "descripcion": "Conocer un paisaje de grandes paredes rocosas y observar su río desde un mirador."

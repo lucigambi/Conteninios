@@ -1,0 +1,24 @@
+PERSONAJES CON ALFA
+
+Ubicación: #personajes-en-movimiento, entre Alma y Las aventuras.
+Sección «¿Con quién empezamos?»: videos, elección de compañero y corazones locales.
+Los enlaces finales se configuran en COMPANION_URLS de app.js.
+Los corazones se guardan por personaje en localStorage, sin backend.
+
+Originales: MOV ProRes 4444, 1080x1080, 30 fps, 5,03 segundos.
+Copias: WebM VP9 con alfa, 640x640, 24 fps, CRF 34, sin audio.
+Los cuatro WebM suman 732.553 bytes; sus pósters WebP, 194.746 bytes.
+Los originales MOV y pósters PNG intermedios se conservan localmente.
+
+Verificación: Chrome, transparencia real mediante lectura de alfa del video,
+reproducción, pausa, fondos claro y oscuro, layout de 390 px sin desborde.
+Safari/iOS no verificado. El soporte de transparencia debe comprobarse allí
+antes de reemplazar los personajes definitivos por estos videos.
+
+No se modificaron las secciones definitivas de los personajes.
+Para retirar la prueba: quitar la sección #personajes-en-movimiento en index.html,
+el bloque alphaPreview en app.js y las reglas alpha-preview en styles.css.
+
+Regeneración: python optimizar-videos.py RUTA_FFMPEG
+Requiere FFmpeg con libvpx-vp9 y Pillow para los pósters WebP.
+Detalle de pesos: videos-alpha-pesos.json.

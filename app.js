@@ -8,7 +8,7 @@ const PERSONAJES = [
   {id:'ed',name:'ED',quote:'Conoce el pasado porque estuvo allí.',description:'ED es un zombie con muchísimas historias para contar. Viajá con él a otros tiempos, descubrí inventos y probá juegos que siguen uniendo amigos.',short:'Historia · Memoria · Amistad',loop:'ED enamorado, con corazones, de noche.',loopTitle:'Hay recuerdos que se comparten.',scenes:[
     {code:'E01',title:'Historia de los juguetes',text:'Viajá con ED a una plaza de otros tiempos. Un trompo empieza a girar y enseguida aparecen nuevos compañeros de juego.',explore:'Descubrí juegos de antes que todavía podemos compartir. ¿A quién invitarías a jugar?'},
     {code:'E07',title:'Las cartas',text:'ED tiene una carta para enviar. Seguí su recorrido por un correo antiguo y descubrí cómo llega un mensaje a alguien que está lejos.',explore:'Imaginá tu propio mensaje y conocé distintas maneras de hacerlo viajar.'}]},
-  {id:'vamp',name:'Vamp',quote:'El mundo está lleno de sorpresas.',description:'Vamp es un murciélago listo para salir a explorar. Volá con él entre paisajes, músicas y celebraciones, y descubrí distintas formas de vivir y compartir.',short:'Mundo · Culturas · Geografía',loop:'Vamp con anteojos de sol tocando la guitarra eléctrica.',loopTitle:'El mundo tiene muchos ritmos.',scenes:[
+  {id:'vamp',name:'Vamp',quote:'El universo está lleno de sorpresas.',description:'Vamp es un murciélago listo para salir a explorar. Volá con él entre paisajes, músicas y celebraciones, y descubrí distintas formas de vivir y compartir.',short:'Universo · Culturas · Geografía',loop:'Vamp con anteojos de sol tocando la guitarra eléctrica.',loopTitle:'El universo tiene muchos ritmos.',scenes:[
     {code:'V15',title:'Carnavales',text:'¡Suena la música y el barrio se llena de colores! Seguí a Vamp entre máscaras, disfraces y bailes de carnaval.',explore:'Explorá ritmos, colores y distintas formas de celebrar juntos.'},
     {code:'V03',title:'Montañas, llanuras y costas',text:'Vamp llegó a un valle rodeado de montañas. Una nueva amiga lo espera para mirar el paisaje y seguir explorando.',explore:'Descubrí qué hace distinto a cada paisaje y encontrá palabras para contar lo que ves.'}]},
   {id:'alma',name:'Alma',quote:'Lo que sentís también cuenta.',description:'Alma es una pequeña fantasma que te acompaña a descubrir tus emociones. Con ella vas a poner en palabras lo que sentís, pedir ayuda y aprender a cuidar a tus amigos.',short:'Emociones · Cuidado · Vínculos',loop:'Alma flotando, come una galletita y toma leche.',loopTitle:'Sentir también es descubrir.',scenes:[
@@ -64,7 +64,7 @@ const CHARACTER_VISUALS = Object.fromEntries(PERSONAJES.map(p=>[p.id, {
 const CHARACTER_FEATURES = {
   charlie:{speech:'¿Qué descubrimos hoy?',items:[['Lengua','Cuentos, rimas y juegos con palabras.','Jugamos con las palabras'],['Matemática','Números y formas para jugar y construir.','Figuras geométricas'],['Ciencias','Plantas, animales y pequeños descubrimientos.','La semilla']]},
   ed:{speech:'¿Viajamos en el tiempo?',items:[['Otros tiempos','Juguetes, escuelas y costumbres de antes.','Historia de los juguetes'],['Inventos','Cartas, trenes y objetos con historia.','Las cartas'],['Recuerdos','Música, culturas y amistades que crecen.','Música para compartir']]},
-  vamp:{speech:'¿Adónde vamos hoy?',items:[['Paisajes','Selvas, montañas y mundos bajo el agua.','Montañas, llanuras y costas'],['Viajes','Mapas, transportes y formas de vivir.','Un mapa para explorar'],['Culturas','Fiestas, juegos y un lugar para todos.','Carnavales']]},
+  vamp:{speech:'¿Adónde vamos hoy?',items:[['Paisajes','Selvas, montañas y universos bajo el agua.','Montañas, llanuras y costas'],['Viajes','Mapas, transportes y formas de vivir.','Un mapa para explorar'],['Culturas','Fiestas, juegos y un lugar para todos.','Carnavales']]},
   alma:{speech:'¿Cómo te sentís hoy?',items:[['Emociones','Reconocer y poner en palabras lo que sentimos.','Las emociones'],['Cuidado','Pedir ayuda, poner límites y encontrar calma.','Puedo reparar un error'],['Amistad','Compartir, escuchar y aprender a reparar.','Jugar es mejor juntos']]}
 };
 function buildCharacters() {
@@ -90,15 +90,66 @@ function buildCharacters() {
   document.querySelectorAll('.character').forEach(s=>preloadObserver.observe(s));
 }
 buildCharacters();
+// Accesos por personaje: completar con las rutas reales de FlexFlix cuando estén disponibles.
+const COMPANION_URLS={charlie:'',ed:'',vamp:'',alma:''};
+const COMPANION_ACTIONS={charlie:'Quiero hacerme mil preguntas',ed:'Quiero viajar en el tiempo',vamp:'Quiero explorar nuevas culturas',alma:'Quiero comprender mis emociones'};
+const alphaPreview=document.querySelector('.alpha-preview');
+if(alphaPreview){
+  alphaPreview.querySelector('.alpha-preview-grid').innerHTML=PERSONAJES.map(p=>`<article class="alpha-preview-card ${p.id}"><h3>${escapeHTML(p.name)}</h3><video class="alpha-character-video" muted loop playsinline preload="none" width="640" height="640" poster="assets/video/${p.id}-alpha.webp" data-alpha-src="assets/video/${p.id}-alpha.webm" aria-label="${escapeHTML(p.name)} en movimiento"></video><p class="alpha-video-fallback" hidden>La animación no está disponible en este navegador.</p><a class="companion-choice" href="#" data-companion="${p.id}" aria-label="¡${COMPANION_ACTIONS[p.id]} con ${escapeHTML(p.name)}!"><span>¡${COMPANION_ACTIONS[p.id]}</span><span class="companion-with">con <strong>${escapeHTML(p.name)}!</strong></span></a></article>`).join('');
+  alphaPreview.querySelectorAll('.alpha-preview-card').forEach((card,index)=>{
+    const person=PERSONAJES[index],key=`conteninos-hearts-${person.id}`;
+    let count=0;
+    try{const saved=Number(localStorage.getItem(key));if(Number.isSafeInteger(saved)&&saved>=0)count=saved;}catch{}
+    const like=document.createElement('button');like.type='button';like.className='companion-like';
+    like.setAttribute('aria-label',`Sumar un corazón a ${person.name}`);
+    like.innerHTML=`<svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true"><path fill="currentColor" d="M12 21S2 15 2 8.5A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 10 3.5C22 15 12 21 12 21Z"/></svg><span class="heart-count" aria-live="polite" aria-atomic="true">${count}</span>`;
+    like.addEventListener('click',()=>{
+      count++;like.querySelector('.heart-count').textContent=count;
+      try{localStorage.setItem(key,String(count));}catch{}
+      if(!isMotionReduced()&&!motionPaused){
+        const heart=like.querySelector('svg');heart.getAnimations().forEach(a=>a.cancel());
+        heart.animate([{transform:'scale(1)'},{transform:'scale(1.25)'},{transform:'scale(1)'}],{duration:280,easing:'ease-out'});
+      }
+    });
+    card.append(like);
+  });
+  const alphaObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(!entry.isIntersecting)return;
+    const video=entry.target;alphaObserver.unobserve(video);
+    video.muted=true;
+    video.addEventListener('loadeddata',()=>window.syncMedia?.(),{once:true});
+    video.addEventListener('error',()=>{
+      const still=document.createElement('img');still.src=video.poster;still.alt=video.getAttribute('aria-label');still.width=640;still.height=640;still.className='alpha-character-video';video.replaceWith(still);
+      still.nextElementSibling.hidden=false;
+    },{once:true});
+    video.src=video.dataset.alphaSrc;video.load();
+  }),{rootMargin:'200px'});
+  alphaPreview.querySelectorAll('video').forEach(video=>alphaObserver.observe(video));
+}
+PERSONAJES.forEach(p=>{
+  const character=document.querySelector(`.hero-${p.id}`);
+  character.tabIndex=0;
+  character.setAttribute('aria-describedby',`hero-speech-${p.id}`);
+  character.insertAdjacentHTML('beforeend',`<div class="hero-speech" id="hero-speech-${p.id}" role="tooltip"><strong>Soy <span>${escapeHTML(p.name.toUpperCase())}</span></strong><p>${escapeHTML(CHARACTER_FEATURES[p.id].speech)}</p></div>`);
+});
 document.querySelector('#intro-inline').innerHTML=videoSlot('intro-logo','Una aventura con los cuatro amigos.',{intro:true});
 const heroVideoSlot=document.querySelector('#intro-inline [data-video]');
 heroVideoSlot.dataset.source='assets/video/Conteniños (para landing).mp4';
 heroVideoSlot.dataset.kind='loop';
 heroVideoSlot.classList.add('video-circle');
 document.querySelector('#intro-inline').insertAdjacentHTML('beforeend','<div class="video-orbits" aria-hidden="true"><span class="video-orbit"></span><span class="video-orbit video-orbit-second"></span></div>');
-document.querySelector('#teaser-slot').innerHTML=videoSlot('teaser','Teaser completo de 23 s. Cierra con «by FlexFlix.ai».',{teaser:true});
+document.querySelector('#teaser-slot').innerHTML='<img class="adventure-group" src="assets/img/fondos/todos-fondo.webp" alt="Charlie, Alma, ED y Vamp juntos en el Universo Conteniños" width="1672" height="941" loading="lazy">';
 
 const dialog=document.querySelector('#detail-dialog');
+document.querySelectorAll('[data-companion]').forEach(link=>{
+  const id=link.dataset.companion,p=PERSONAJES.find(p=>p.id===id);
+  if(COMPANION_URLS[id]){link.href=COMPANION_URLS[id];link.rel='noopener';}
+  else link.addEventListener('click',e=>{
+    e.preventDefault();
+    openDialog(`<p class="mini-label">ELEGISTE A ${escapeHTML(p.name.toUpperCase())}</p><h2 id="dialog-title">Tu aventura con ${escapeHTML(p.name)} está por comenzar.</h2><p>Pronto vas a poder entrar a su espacio en FlexFlix.</p>`);
+    dialog.setAttribute('aria-labelledby','dialog-title');
+  });
+});
 let dialogReturnFocus;
 function openDialog(html) {
   dialogReturnFocus=document.activeElement;
@@ -118,7 +169,7 @@ document.addEventListener('click',e=>{
 });
 document.querySelectorAll('[data-cta]').forEach(a=>{
   if(CTA_URL){a.href=CTA_URL;a.rel='noopener';}
-  else a.addEventListener('click',e=>{e.preventDefault();openDialog('<p class="mini-label">CONTENIÑOS EN FLEXFLIX</p><h2 id="dialog-title">¡La aventura está por comenzar!</h2><p>Pronto vas a poder entrar al mundo de Conteniños desde acá.</p><p class="explore">Mientras tanto, conocé a Charlie, ED, Vamp y Alma y descubrí sus aventuras.</p>');dialog.setAttribute('aria-labelledby','dialog-title');});
+  else a.addEventListener('click',e=>{e.preventDefault();openDialog('<p class="mini-label">CONTENIÑOS EN FLEXFLIX</p><h2 id="dialog-title">¡La aventura está por comenzar!</h2><p>Pronto vas a poder entrar al universo de Conteniños desde acá.</p><p class="explore">Mientras tanto, conocé a Charlie, ED, Vamp y Alma y descubrí sus aventuras.</p>');dialog.setAttribute('aria-labelledby','dialog-title');});
 });
 
 mobileQuery.addEventListener('change',()=>{document.querySelectorAll('.turn-hint').forEach(el=>el.textContent=mobileQuery.matches?'DESLIZÁ SOBRE EL PERSONAJE':'GIRÁ CON EL SCROLL O LAS FLECHAS');});
@@ -170,7 +221,6 @@ function syncMedia(){
   const staticMode=isMotionReduced()||motionPaused||document.hidden;
   document.body.classList.toggle('ambient-inactive',staticMode||dialog.open||!inViewport(document.querySelector('.hero')));
   document.querySelectorAll('.character-design').forEach(section=>section.classList.toggle('character-inactive',staticMode||dialog.open||!inViewport(section.querySelector('.turntable'))));
-  document.body.classList.toggle('closing-inactive',staticMode||dialog.open||!inViewport(document.querySelector('.closing')));
   lotties.forEach(({container,anim,layer})=>{const play=!staticMode&&!dialog.open&&inViewport(container);layer.hidden=!play;container.querySelector('img').style.opacity=play?'0':'1';play?anim.play():anim.pause();});
   document.querySelectorAll('video').forEach(v=>{
     const visible=inViewport(v)&&!v.closest('[aria-hidden="true"]')&&(!dialog.open||dialog.contains(v));

@@ -1,0 +1,26 @@
+[
+  {
+    "personaje": "CHARLIE",
+    "original_bytes": 180903684,
+    "web_bytes": 180886,
+    "poster_bytes": 31522
+  },
+  {
+    "personaje": "ED",
+    "original_bytes": 195485588,
+    "web_bytes": 124957,
+    "poster_bytes": 36940
+  },
+  {
+    "personaje": "VAMP",
+    "original_bytes": 239331828,
+    "web_bytes": 253643,
+    "poster_bytes": 78418
+  },
+  {
+    "personaje": "ALMA",
+    "original_bytes": 247764628,
+    "web_bytes": 173067,
+    "poster_bytes": 47866
+  }
+]
