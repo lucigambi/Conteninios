@@ -217,6 +217,23 @@ document.querySelectorAll('.flex-logo').forEach(container=>{
   lotties.push({container,anim,layer});
 });
 function inViewport(el){const r=el.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.width>0&&r.height>0;}
+const pendingVideoPlays=new WeakSet();
+function playAmbientVideo(video,manual=false){
+  if(pendingVideoPlays.has(video)||(!manual&&video.dataset.autoplayBlocked==='true'))return;
+  pendingVideoPlays.add(video);
+  video.play().then(()=>{
+    delete video.dataset.autoplayBlocked;
+    video.parentElement.querySelector('.media-resume')?.remove();
+  }).catch(error=>{
+    if(error.name!=='NotAllowedError')return;
+    video.dataset.autoplayBlocked='true';
+    if(video.parentElement.querySelector('.media-resume'))return;
+    const button=document.createElement('button');button.type='button';button.className='media-resume';
+    button.textContent='▶ Reproducir animación';
+    button.addEventListener('click',()=>playAmbientVideo(video,true));
+    video.parentElement.append(button);
+  }).finally(()=>pendingVideoPlays.delete(video));
+}
 function syncMedia(){
   const staticMode=isMotionReduced()||motionPaused||document.hidden;
   document.body.classList.toggle('ambient-inactive',staticMode||dialog.open||!inViewport(document.querySelector('.hero')));
@@ -224,7 +241,9 @@ function syncMedia(){
   lotties.forEach(({container,anim,layer})=>{const play=!staticMode&&!dialog.open&&inViewport(container);layer.hidden=!play;container.querySelector('img').style.opacity=play?'0':'1';play?anim.play():anim.pause();});
   document.querySelectorAll('video').forEach(v=>{
     const visible=inViewport(v)&&!v.closest('[aria-hidden="true"]')&&(!dialog.open||dialog.contains(v));
-    if(!visible||staticMode)v.pause();else if(v.closest('[data-video]')?.dataset.kind!=='teaser'&&v.muted&&v.readyState>=1)v.play().catch(()=>{});
+    const resume=v.parentElement.querySelector('.media-resume');
+    if(resume)resume.hidden=!visible||staticMode;
+    if(!visible||staticMode)v.pause();else if(v.paused&&v.closest('[data-video]')?.dataset.kind!=='teaser'&&v.muted&&v.readyState>=1)playAmbientVideo(v);
   });
 }
 window.syncMedia=syncMedia;
