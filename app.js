@@ -1,6 +1,6 @@
 'use strict';
 // Único lugar para definir el acceso a la sección de Conteniños en FlexFlix. Vacío = aviso visible, sin enlace ficticio.
-const CTA_URL = '';
+const CTA_URL = 'https://www.flexflix.ai/content/conteni%C3%B1os/x5SK6ZxUaWJhW69lUR8xuGfGf';
 const PERSONAJES = [
   {id:'charlie',name:'Charlie',quote:'Cada pregunta abre una aventura.',description:'Charlie siempre tiene un libro cerca y una pregunta por hacer. Con él vas a inventar historias, jugar con números y descubrir los secretos de la naturaleza.',short:'Lengua · Matemática · Ciencias',loop:'Charlie leyendo con auriculares entre pilas de libros.',loopTitle:'Cada libro abre una aventura.',scenes:[
     {code:'C13',title:'La semilla',text:'¡Algo asoma en la maceta! Acompañá a Charlie a cuidar un brote y a dibujar cómo cambia día a día.',explore:'Descubrí qué necesita una planta para crecer. Un poquito de paciencia y mucha curiosidad.'},
