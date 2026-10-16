@@ -463,7 +463,10 @@
     "ed_turn": true,
     "vamp_turn": true,
     "alma_turn": true,
-    "eight_scenes": true,
+    "twelve_scenes": true,
+    "four_bubbles": true,
+    "eight_orbits": true,
+    "no_old_controls": true,
     "three_ctas": true,
     "no_catalog": true,
     "mobile_no_pins": true
@@ -484,49 +487,49 @@
       {
         "id": "ed",
         "stage": 0,
-        "delta": 0.02
+        "delta": 0
       },
       {
         "id": "vamp",
         "stage": 0,
-        "delta": 0.03
+        "delta": 0
       },
       {
         "id": "alma",
         "stage": 0,
-        "delta": 0.05
+        "delta": 0
       },
       {
         "id": "trailer",
         "stage": 0,
-        "delta": 0.06
+        "delta": 0
       },
       {
         "id": "cierre",
         "stage": 0,
-        "delta": 0.06
+        "delta": 0
       }
     ],
     "backward": [
       {
         "id": "trailer",
         "stage": 0,
-        "delta": 0.06
+        "delta": 0
       },
       {
         "id": "alma",
         "stage": 0,
-        "delta": 0.05
+        "delta": 0
       },
       {
         "id": "vamp",
         "stage": 0,
-        "delta": 0.03
+        "delta": 0
       },
       {
         "id": "ed",
         "stage": 0,
-        "delta": 0.02
+        "delta": 0
       },
       {
         "id": "charlie",

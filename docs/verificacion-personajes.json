@@ -1,0 +1,24 @@
+{
+  "charlie": {
+    "float": true,
+    "pause": true,
+    "cards": 3
+  },
+  "ed": {
+    "float": true,
+    "pause": true,
+    "cards": 3
+  },
+  "vamp": {
+    "float": true,
+    "pause": true,
+    "cards": 3
+  },
+  "alma": {
+    "float": true,
+    "pause": true,
+    "cards": 3
+  },
+  "offscreen_paused": true,
+  "js_errors": []
+}
