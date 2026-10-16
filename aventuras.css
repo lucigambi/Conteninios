@@ -1,0 +1,43 @@
+/* Primitivos → semánticos → componentes de la sección de aventuras. */
+.adventures{--ad-p-green:#005336;--ad-p-action:#00813e;--ad-p-cream:#fafbef;--ad-p-orange:#b65400;--ad-p-purple:#7843c9;--ad-p-blue:#007f91;--ad-text:var(--ad-p-green);--ad-surface:var(--ad-p-cream);--ad-button:var(--button-bg);--ad-tab:var(--ad-p-green);--ad-accent:var(--ad-p-action);--ad-shade:0,35,25;color:var(--ad-text);background:var(--ad-surface);padding:clamp(88px,11vh,120px) clamp(24px,4vw,80px) 24px;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.adventures[data-friend=charlie]{--ad-surface:#f2f8e9}
+.adventures[data-friend=ed]{--ad-surface:#fff2e4;--ad-text:#783b15;--ad-accent:var(--ad-p-orange);--ad-shade:58,27,10}
+.adventures[data-friend=vamp]{--ad-surface:#f3ecfc;--ad-text:#513078;--ad-accent:var(--ad-p-purple);--ad-shade:35,18,56}
+.adventures[data-friend=alma]{--ad-surface:#eaf8fc;--ad-text:#125568;--ad-accent:var(--ad-p-blue);--ad-shade:8,37,48}
+.adventures-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:20px}
+.adventures-eyebrow{font-size:clamp(11px,.85vw,16px);font-weight:900;letter-spacing:.2em;margin-bottom:10px}
+.adventures h2{font-size:clamp(34px,min(4.3vw,6.4vh),76px);font-weight:650;line-height:.98;letter-spacing:-.025em}
+.adventures-intro{font-size:clamp(15px,1.4vw,23px);font-weight:700;margin-top:8px}
+.adventure-tabs{display:flex;gap:8px;flex-shrink:0;padding-bottom:5px}
+.adventure-tabs button{--ad-tab:var(--ad-p-green);display:flex;align-items:center;gap:8px;padding:4px 14px 4px 5px;min-height:50px;border:1.5px solid var(--ad-tab);border-radius:28px;background:transparent;color:var(--ad-tab);font-size:clamp(14px,1.1vw,19px);font-weight:900;transition:transform .18s}
+.adventure-tabs [data-story=ed]{--ad-tab:var(--ad-p-orange)}.adventure-tabs [data-story=vamp]{--ad-tab:var(--ad-p-purple)}.adventure-tabs [data-story=alma]{--ad-tab:var(--ad-p-blue)}
+.adventure-tabs button[aria-selected=true]{background:var(--ad-tab);color:white;box-shadow:0 6px 14px #00533618}.adventure-tabs button:hover{transform:translateY(-2px)}
+.adventure-tabs img{width:clamp(35px,3.8vw,62px);height:clamp(35px,3.8vw,62px);object-fit:contain}
+.adventure-panel{display:grid;grid-template-columns:minmax(0,28fr) minmax(0,44fr) minmax(0,26fr);gap:clamp(14px,1.6vw,30px);align-items:start}
+.adventure-friend{align-self:stretch;background-color:var(--ad-surface);background-image:var(--friend-background);background-blend-mode:multiply;background-size:100% 100%;background-repeat:no-repeat;position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-width:0}
+.adventure-friend{background-image:none;background-color:transparent;isolation:isolate}
+.adventure-friend::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--friend-background) center / 100% 100% no-repeat;mix-blend-mode:multiply;mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
+.adventure-portrait{position:relative;flex:1;min-height:0}.adventure-portrait>picture img{width:100%;height:100%;max-height:49vh;object-fit:contain;object-position:center bottom}
+.adventure-speech{position:absolute;top:3%;right:-2%;background:#fffef3;border-radius:50%;padding:18px 12px;width:clamp(94px,9vw,145px);text-align:center;font-size:clamp(14px,1.25vw,20px);font-weight:900;line-height:1.05;box-shadow:0 7px 20px #375c2510}
+.adventure-speech:after{content:'';position:absolute;bottom:-10px;left:8px;width:24px;height:24px;background:#fffef3;clip-path:polygon(30% 0,100% 45%,0 100%)}
+.adventure-tagline{text-align:center;font-size:clamp(13px,1.1vw,19px);font-weight:850;padding:10px 4px 0}
+.adventure-card{margin:0;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:17px;background:var(--ad-text);isolation:isolate}
+.adventure-card>picture img{width:100%;height:123%;object-fit:cover;object-position:center top;transform:scale(1.055)}
+.adventure-card figcaption{position:absolute;inset:auto 0 0;display:flex;align-items:flex-end;justify-content:space-between;gap:6px;min-height:29%;padding:10px 13px;background:linear-gradient(0deg,rgba(var(--ad-shade),.70) 0%,rgba(var(--ad-shade),.28) 55%,rgba(var(--ad-shade),0) 100%);text-shadow:0 1px 4px #0008;color:white;text-transform:uppercase;font-size:clamp(12px,1.1vw,21px);font-weight:1000;line-height:1.1}
+.adventure-featured figcaption{font-size:clamp(23px,2.3vw,40px);padding:14px 20px;min-height:31%}
+.adventure-play{flex:none;display:grid;place-items:center;width:clamp(30px,3.5vw,56px);height:clamp(30px,3.5vw,56px);border:2px solid white;border-radius:50%;font-size:clamp(15px,1.5vw,25px);padding-left:3px;background:rgba(var(--ad-shade),.22)}
+
+.adventure-main h3{font-size:clamp(22px,2.2vw,38px);font-weight:650;line-height:1.1;margin:12px 0 10px;letter-spacing:-.025em}
+.adventure-cta{display:inline-flex;align-items:center;justify-content:center;gap:14px;border-radius:30px;background:var(--ad-button);color:var(--button-text);padding:10px 22px;font-size:clamp(16px,1.45vw,23px);font-weight:900;min-height:44px;transition:transform .18s;box-shadow:0 8px 20px #00813e15}.adventure-cta:hover{transform:translateY(-3px)}
+.adventure-secondary{display:grid;gap:14px}.adventures-rule{display:flex;align-items:center;gap:12px;color:var(--ad-accent);font-size:24px;margin-top:18px}.adventures-rule span{height:1px;background:currentColor;opacity:.5;flex:1}
+@media(min-width:901px) and (max-height:740px){.adventures{padding-top:84px;padding-bottom:12px}.adventures-header{margin-bottom:14px}.adventures-eyebrow{margin-bottom:6px}.adventure-panel{grid-template-columns:minmax(0,28fr) minmax(0,43fr) minmax(0,27fr)}.adventure-featured{max-height:40vh;aspect-ratio:auto;height:40vh}.adventure-portrait>picture img{max-height:47vh}.adventure-main h3{margin:8px 0;font-size:clamp(21px,2vw,30px)}.adventures-rule{margin-top:10px}.adventure-tabs button{padding-right:10px}.adventure-tabs img{width:38px;height:38px}}
+@media(min-width:901px) and (max-height:680px){.adventures h2{font-size:36px}.adventures-intro{font-size:16px}.adventure-featured{height:34vh;max-height:34vh}.adventure-portrait>picture img{max-height:43vh}.adventure-secondary .adventure-card{height:22vh;aspect-ratio:auto}.adventure-main h3{font-size:24px}.adventure-cta{font-size:17px;padding:8px 20px}.adventures-rule{font-size:18px;margin-top:8px}}
+@media(max-width:1100px) and (min-width:901px){.adventures-header{gap:14px}.adventures h2{font-size:36px}.adventure-tabs{gap:5px}.adventure-tabs button{gap:4px;padding-right:9px}.adventure-tabs img{width:32px;height:32px}}
+@media(max-width:900px){.adventures{padding:90px 22px 28px;min-height:0}.adventures-header{display:block;margin-bottom:18px}.adventures h2{font-size:clamp(34px,7.3vw,56px)}.adventures-intro{font-size:16px}.adventure-tabs{margin-top:22px;gap:6px;justify-content:space-between}.adventure-tabs button{flex-direction:column;gap:2px;padding:7px 8px;border-radius:20px;flex:1;font-size:14px}.adventure-tabs img{width:43px;height:43px}.adventure-panel{grid-template-columns:1fr;gap:20px}.adventure-friend{height:285px;background-size:auto 100%;background-position:center}.adventure-portrait>picture img{height:250px;max-height:none}.adventure-speech{right:8%;top:10%;width:108px;font-size:16px}.adventure-tagline{font-size:15px;padding-top:7px}.adventure-main h3{font-size:28px;margin-top:12px}.adventure-featured figcaption{font-size:25px}.adventure-cta{font-size:18px;width:100%;margin-top:3px}.adventure-secondary{grid-template-columns:1fr 1fr;gap:10px}.adventure-secondary figcaption{font-size:12px;padding:7px;min-height:39%}.adventure-secondary .adventure-play{width:25px;height:25px;font-size:12px;border-width:1.5px}.adventure-secondary .adventure-card{border-radius:11px}.adventures-rule{margin-top:25px}}
+
+.adventure-card>picture,.adventure-portrait>picture{display:contents}
+.adventure-tabs picture{display:block;flex:none}
+@media(max-width:900px){.adventure-friend{width:100%;max-width:360px;margin-inline:auto}.adventure-friend::before{background-image:var(--friend-background-mobile);background-size:auto 100%}}
+@media(max-width:480px){.adventure-secondary{grid-template-columns:1fr;gap:14px}.adventure-secondary figcaption{font-size:17px;padding:12px;min-height:29%}.adventure-secondary .adventure-play{width:38px;height:38px;font-size:18px}.adventure-secondary .adventure-card{border-radius:16px}}
+
+@media(max-width:480px){.adventure-portrait>picture img{width:80%;margin-right:auto}.adventure-speech{right:0;top:0;width:100px;padding:14px 9px;font-size:15px}}

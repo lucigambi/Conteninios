@@ -1,0 +1,906 @@
+[
+  {
+    "original": "assets\\img\\thumbs\\ABEJAS_Charlie.png",
+    "bytes": 1328472,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-320.webp",
+        "bytes": 13964,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-320.avif",
+        "bytes": 13064,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-640.webp",
+        "bytes": 33108,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-640.avif",
+        "bytes": 27211,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-960.webp",
+        "bytes": 54164,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-960.avif",
+        "bytes": 43422,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-1280.webp",
+        "bytes": 75936,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\ABEJAS_Charlie-1280.avif",
+        "bytes": 61600,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma.png",
+    "bytes": 881240,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-320.webp",
+        "bytes": 9040,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-320.avif",
+        "bytes": 10514,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-640.webp",
+        "bytes": 20116,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-640.avif",
+        "bytes": 20082,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-960.webp",
+        "bytes": 32320,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-960.avif",
+        "bytes": 30098,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-1280.webp",
+        "bytes": 43220,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\EL-DIÁLOGO_Alma-1280.avif",
+        "bytes": 39648,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie.png",
+    "bytes": 1127906,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-320.webp",
+        "bytes": 13546,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-320.avif",
+        "bytes": 12948,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-640.webp",
+        "bytes": 31546,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-640.avif",
+        "bytes": 26334,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-960.webp",
+        "bytes": 51474,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-960.avif",
+        "bytes": 40064,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-1280.webp",
+        "bytes": 70508,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\FIGURAS-GEOMÉTRICAS_Charlie-1280.avif",
+        "bytes": 55683,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed.png",
+    "bytes": 1205107,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-320.webp",
+        "bytes": 13560,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-320.avif",
+        "bytes": 12267,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-640.webp",
+        "bytes": 32940,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-640.avif",
+        "bytes": 26441,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-960.webp",
+        "bytes": 52642,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-960.avif",
+        "bytes": 42229,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-1280.webp",
+        "bytes": 73652,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LA-ANIMACIÓN_Ed-1280.avif",
+        "bytes": 57669,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed.png",
+    "bytes": 1407699,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-320.webp",
+        "bytes": 18078,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-320.avif",
+        "bytes": 15818,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-640.webp",
+        "bytes": 43442,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+        "bytes": 33989,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-960.webp",
+        "bytes": 70800,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-960.avif",
+        "bytes": 54789,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-1280.webp",
+        "bytes": 97464,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\HISTORIA-DE-LOS-JUGUETES_Ed-1280.avif",
+        "bytes": 76492,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp.png",
+    "bytes": 1386162,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-320.webp",
+        "bytes": 13832,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-320.avif",
+        "bytes": 13192,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-640.webp",
+        "bytes": 39176,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-640.avif",
+        "bytes": 32284,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-960.webp",
+        "bytes": 69678,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-960.avif",
+        "bytes": 55448,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-1280.webp",
+        "bytes": 99624,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\ISLAS-GALÁPAGOS_Vamp-1280.avif",
+        "bytes": 80996,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma.png",
+    "bytes": 1009251,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-320.webp",
+        "bytes": 11620,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-320.avif",
+        "bytes": 11634,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-640.webp",
+        "bytes": 27382,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-640.avif",
+        "bytes": 24608,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-960.webp",
+        "bytes": 43916,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-960.avif",
+        "bytes": 38424,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-1280.webp",
+        "bytes": 60326,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\LAS-EMOCIONES_Alma-1280.avif",
+        "bytes": 52602,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp.png",
+    "bytes": 1310779,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-320.webp",
+        "bytes": 14352,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-320.avif",
+        "bytes": 13550,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.webp",
+        "bytes": 35294,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+        "bytes": 29512,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-960.webp",
+        "bytes": 58764,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-960.avif",
+        "bytes": 47415,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-1280.webp",
+        "bytes": 83202,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\LOS-MEDIOS-DE-TRANSPORTE_Vamp-1280.avif",
+        "bytes": 66483,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp.png",
+    "bytes": 1168884,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-320.webp",
+        "bytes": 9442,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-320.avif",
+        "bytes": 10393,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-640.webp",
+        "bytes": 23872,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif",
+        "bytes": 22449,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-960.webp",
+        "bytes": 41454,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-960.avif",
+        "bytes": 37372,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-1280.webp",
+        "bytes": 60100,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\MI-COLMILLO-ES-DIFERENTE_Vamp-1280.avif",
+        "bytes": 52635,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie.png",
+    "bytes": 954608,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-320.webp",
+        "bytes": 8762,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-320.avif",
+        "bytes": 9697,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-640.webp",
+        "bytes": 20238,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-640.avif",
+        "bytes": 18260,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-960.webp",
+        "bytes": 32008,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-960.avif",
+        "bytes": 27647,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-1280.webp",
+        "bytes": 43480,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\OBRAS-DE-TEATRO_Charlie-1280.avif",
+        "bytes": 36935,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed.png",
+    "bytes": 1262288,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-320.webp",
+        "bytes": 12686,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-320.avif",
+        "bytes": 12176,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-640.webp",
+        "bytes": 30712,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-640.avif",
+        "bytes": 27225,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-960.webp",
+        "bytes": 48896,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-960.avif",
+        "bytes": 42501,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-1280.webp",
+        "bytes": 68404,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\PIRÁMIDES-DE-EGIPTO_Ed-1280.avif",
+        "bytes": 58846,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma.png",
+    "bytes": 1219129,
+    "variants": [
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-320.webp",
+        "bytes": 12822,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-320.avif",
+        "bytes": 12212,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-640.webp",
+        "bytes": 32282,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-640.avif",
+        "bytes": 27587,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-960.webp",
+        "bytes": 52212,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-960.avif",
+        "bytes": 44144,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-1280.webp",
+        "bytes": 72508,
+        "width": 1280
+      },
+      {
+        "file": "assets\\img\\thumbs\\QUIERES-JUGAR-CONMIGO_Alma-1280.avif",
+        "bytes": 61767,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\personajes\\Alma - Thumbs.png",
+    "bytes": 1817276,
+    "variants": [
+      {
+        "file": "assets\\img\\personajes\\Alma - Thumbs-320.webp",
+        "bytes": 23158,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\Alma - Thumbs-320.avif",
+        "bytes": 15203,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\Alma - Thumbs-640.webp",
+        "bytes": 62312,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\Alma - Thumbs-640.avif",
+        "bytes": 38425,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\Alma - Thumbs-960.webp",
+        "bytes": 117738,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\personajes\\Alma - Thumbs-960.avif",
+        "bytes": 73721,
+        "width": 960
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\personajes\\Charlie-Thumbs.png",
+    "bytes": 1146561,
+    "variants": [
+      {
+        "file": "assets\\img\\personajes\\Charlie-Thumbs-320.webp",
+        "bytes": 23998,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\Charlie-Thumbs-320.avif",
+        "bytes": 15673,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\Charlie-Thumbs-640.webp",
+        "bytes": 61010,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\Charlie-Thumbs-640.avif",
+        "bytes": 37533,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\Charlie-Thumbs-960.webp",
+        "bytes": 116202,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\personajes\\Charlie-Thumbs-960.avif",
+        "bytes": 69441,
+        "width": 960
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\personajes\\ED-Thumbs.png",
+    "bytes": 2116325,
+    "variants": [
+      {
+        "file": "assets\\img\\personajes\\ED-Thumbs-320.webp",
+        "bytes": 31850,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\ED-Thumbs-320.avif",
+        "bytes": 20980,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\ED-Thumbs-640.webp",
+        "bytes": 86274,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\ED-Thumbs-640.avif",
+        "bytes": 53270,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\ED-Thumbs-960.webp",
+        "bytes": 165476,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\personajes\\ED-Thumbs-960.avif",
+        "bytes": 100240,
+        "width": 960
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\personajes\\Vamp-Thumbs.png",
+    "bytes": 1522193,
+    "variants": [
+      {
+        "file": "assets\\img\\personajes\\Vamp-Thumbs-320.webp",
+        "bytes": 26508,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\Vamp-Thumbs-320.avif",
+        "bytes": 17115,
+        "width": 320
+      },
+      {
+        "file": "assets\\img\\personajes\\Vamp-Thumbs-640.webp",
+        "bytes": 75872,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\Vamp-Thumbs-640.avif",
+        "bytes": 45497,
+        "width": 640
+      },
+      {
+        "file": "assets\\img\\personajes\\Vamp-Thumbs-960.webp",
+        "bytes": 153438,
+        "width": 960
+      },
+      {
+        "file": "assets\\img\\personajes\\Vamp-Thumbs-960.avif",
+        "bytes": 89617,
+        "width": 960
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\iconos\\Alma-circulo.png",
+    "bytes": 727932,
+    "variants": [
+      {
+        "file": "assets\\img\\iconos\\Alma-circulo-96.webp",
+        "bytes": 4438,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\Alma-circulo-96.avif",
+        "bytes": 3400,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\Alma-circulo-192.webp",
+        "bytes": 10418,
+        "width": 192
+      },
+      {
+        "file": "assets\\img\\iconos\\Alma-circulo-192.avif",
+        "bytes": 6819,
+        "width": 192
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\iconos\\Charlie-circulo.png",
+    "bytes": 702320,
+    "variants": [
+      {
+        "file": "assets\\img\\iconos\\Charlie-circulo-96.webp",
+        "bytes": 4716,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\Charlie-circulo-96.avif",
+        "bytes": 3519,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\Charlie-circulo-192.webp",
+        "bytes": 11028,
+        "width": 192
+      },
+      {
+        "file": "assets\\img\\iconos\\Charlie-circulo-192.avif",
+        "bytes": 7717,
+        "width": 192
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\iconos\\ED-circulo.png",
+    "bytes": 715211,
+    "variants": [
+      {
+        "file": "assets\\img\\iconos\\ED-circulo-96.webp",
+        "bytes": 4676,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\ED-circulo-96.avif",
+        "bytes": 3527,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\ED-circulo-192.webp",
+        "bytes": 10942,
+        "width": 192
+      },
+      {
+        "file": "assets\\img\\iconos\\ED-circulo-192.avif",
+        "bytes": 7419,
+        "width": 192
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\iconos\\Vamp-circulo.png",
+    "bytes": 734826,
+    "variants": [
+      {
+        "file": "assets\\img\\iconos\\Vamp-circulo-96.webp",
+        "bytes": 4508,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\Vamp-circulo-96.avif",
+        "bytes": 3353,
+        "width": 96
+      },
+      {
+        "file": "assets\\img\\iconos\\Vamp-circulo-192.webp",
+        "bytes": 10552,
+        "width": 192
+      },
+      {
+        "file": "assets\\img\\iconos\\Vamp-circulo-192.avif",
+        "bytes": 7300,
+        "width": 192
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\fondos\\Alma - fondo sintesis.png",
+    "bytes": 440827,
+    "variants": [
+      {
+        "file": "assets\\img\\fondos\\Alma - fondo sintesis-360.webp",
+        "bytes": 5314,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\Alma - fondo sintesis-360.avif",
+        "bytes": 4240,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\Alma - fondo sintesis-627.webp",
+        "bytes": 9830,
+        "width": 627
+      },
+      {
+        "file": "assets\\img\\fondos\\Alma - fondo sintesis-627.avif",
+        "bytes": 7587,
+        "width": 627
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\fondos\\Charlie - fondo sintesis.png",
+    "bytes": 427122,
+    "variants": [
+      {
+        "file": "assets\\img\\fondos\\Charlie - fondo sintesis-360.webp",
+        "bytes": 4324,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\Charlie - fondo sintesis-360.avif",
+        "bytes": 3615,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\Charlie - fondo sintesis-627.webp",
+        "bytes": 8530,
+        "width": 627
+      },
+      {
+        "file": "assets\\img\\fondos\\Charlie - fondo sintesis-627.avif",
+        "bytes": 6643,
+        "width": 627
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\fondos\\ED - fondo sintesis.png",
+    "bytes": 419558,
+    "variants": [
+      {
+        "file": "assets\\img\\fondos\\ED - fondo sintesis-360.webp",
+        "bytes": 5088,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\ED - fondo sintesis-360.avif",
+        "bytes": 3836,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\ED - fondo sintesis-627.webp",
+        "bytes": 9496,
+        "width": 627
+      },
+      {
+        "file": "assets\\img\\fondos\\ED - fondo sintesis-627.avif",
+        "bytes": 7032,
+        "width": 627
+      }
+    ]
+  },
+  {
+    "original": "assets\\img\\fondos\\Vamp - fondo sintesis.png",
+    "bytes": 422669,
+    "variants": [
+      {
+        "file": "assets\\img\\fondos\\Vamp - fondo sintesis-360.webp",
+        "bytes": 4258,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\Vamp - fondo sintesis-360.avif",
+        "bytes": 3812,
+        "width": 360
+      },
+      {
+        "file": "assets\\img\\fondos\\Vamp - fondo sintesis-627.webp",
+        "bytes": 7958,
+        "width": 627
+      },
+      {
+        "file": "assets\\img\\fondos\\Vamp - fondo sintesis-627.avif",
+        "bytes": 6680,
+        "width": 627
+      }
+    ]
+  }
+]

@@ -1,0 +1,926 @@
+[
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 720,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 720,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 720,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 720,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      650
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 650,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      650
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 650,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      650
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 650,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      650
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 650,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 768,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 768,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 768,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 768,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 900,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 902,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 881,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 902,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1536,
+      864
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 864,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1536,
+      864
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 864,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1536,
+      864
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 864,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1536,
+      864
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 864,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 1080,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 1080,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 1080,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 1080,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 1426.671875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 1497.671875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 1497.671875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 1528.46875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 1494.546875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 1494.546875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 1494.546875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 1494.546875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-640.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 1511.25,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 1667.25,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 1667.25,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 1667.25,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 1524.234375,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 1524.234375,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 1524.234375,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 1555.03125,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "person": "charlie",
+    "overflow": false,
+    "bottom": 1510.296875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Charlie-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ABEJAS_Charlie-1280.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/FIGURAS-GEOM%C3%89TRICAS_Charlie-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/OBRAS-DE-TEATRO_Charlie-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "person": "ed",
+    "overflow": false,
+    "bottom": 1737.296875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/ED-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LOS-JUGUETES_Ed-1280.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/PIR%C3%81MIDES-DE-EGIPTO_Ed-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/HISTORIA-DE-LA-ANIMACI%C3%93N_Ed-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "person": "vamp",
+    "overflow": false,
+    "bottom": 1583.296875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Vamp-Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/ISLAS-GAL%C3%81PAGOS_Vamp-1280.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LOS-MEDIOS-DE-TRANSPORTE_Vamp-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/MI-COLMILLO-ES-DIFERENTE_Vamp-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "person": "alma",
+    "overflow": false,
+    "bottom": 1583.296875,
+    "links": 1,
+    "cardLinks": 0,
+    "cta": true,
+    "broken": 0,
+    "sources": [
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/personajes/Alma%20-%20Thumbs-640.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/LAS-EMOCIONES_Alma-1280.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/EL-DI%C3%81LOGO_Alma-960.avif",
+      "file:///C:/Users/admin/Desktop/lulidev/landing_conteninios/assets/img/thumbs/QUIERES-JUGAR-CONMIGO_Alma-960.avif"
+    ],
+    "tabs": true,
+    "panels": 1
+  }
+]
