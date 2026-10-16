@@ -1,0 +1,5 @@
+assets/video/*.mov
+assets/video/*-alpha.png
+docs/
+*.py
+AGENTS.md
